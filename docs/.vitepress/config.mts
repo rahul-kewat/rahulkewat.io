@@ -1,8 +1,22 @@
 import { defineConfig } from 'vitepress';
 
 // Helper function to generate sidebar items
-function generateSidebarItems(base: string, items: { text: string; link: string }[]) {
-  return items.map(item => ({ text: item.text, link: `${base}${item.link}` }));
+// Enhanced helper function to generate sidebar items
+function generateSidebarItems(base: string, items: Array<any>): Array<any> {
+  return items.map(item => {
+    // If the item has nested items, process them recursively
+    if (item.items) {
+      return {
+        ...item, // Copy existing properties like text, collapsible, etc.
+        items: generateSidebarItems(base, item.items) // Recursive call for nested items
+      };
+    }
+    // For leaf items, ensure the correct path construction
+    return {
+      ...item,
+      link: item.link ? `${base}${item.link}`.replace(/\/{2,}/g, '/') : undefined // Fix link paths, ensure no double slashes
+    };
+  });
 }
 
 // https://vitepress.dev/reference/site-config
