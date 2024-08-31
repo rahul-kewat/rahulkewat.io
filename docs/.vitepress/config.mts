@@ -1,16 +1,16 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Rahul kewat - The Freelancer",
-  description: "Learn How I made $100k in just few years",
+  title: "Rahul Kewat - The Freelancer",
+  description: "Learn How I made $100k in just a few years",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/20240829_122321.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
-
     sidebar: [
       {
         text: 'Examples',
@@ -20,9 +20,17 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        css: {
+          additionalData: '@import "./custom.css";'
+        }
+      }
+    }
   }
-})
+});

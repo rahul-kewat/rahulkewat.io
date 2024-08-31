@@ -158,7 +158,7 @@ import {
   withMemo,
   withModifiers,
   withScopeId
-} from "./chunk-SUQ25MGA.js";
+} from "./chunk-PAUCAATC.js";
 export {
   BaseTransition,
   BaseTransitionPropsValidators,
