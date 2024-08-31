@@ -52,5 +52,3 @@ A well-crafted portfolio is your most powerful marketing tool as a freelancer. I
 A winning portfolio not only showcases your skills but also tells the story of your work, making it easier for potential clients to see the value you bring. Take the time to craft a portfolio that truly reflects your expertise and aligns with the clients you want to attract.
 
 **Action Step:** Review your current portfolio, update it with your best work, and ensure each project tells a compelling story.
-
-![Winning Portfolio](./images/winning-portfolio.png)

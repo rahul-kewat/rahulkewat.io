@@ -63,4 +63,3 @@ Burnout is a serious risk in freelancing, but it’s preventable with the right 
 
 **Action Step:** Review your current workload and identify one area where you can reduce stress or delegate tasks. Make a commitment to take regular breaks and prioritize your self-care.
 
-![Avoiding Burnout](./images/avoiding-burnout.png)

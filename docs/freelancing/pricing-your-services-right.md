@@ -66,5 +66,3 @@ One of the most challenging aspects of freelancing is figuring out how to price 
 Pricing your services right is a blend of art and science. By considering your costs, market rates, and the value you deliver, you can set prices that reflect your worth and attract the right clients.
 
 **Action Step:** Review your current pricing strategy. Identify areas where you can increase rates or offer new pricing models to maximize your income.
-
-![Pricing Your Services](./images/pricing-your-services.png)

@@ -62,5 +62,3 @@ Collaborating with other freelancers can open up new opportunities, expand your 
 Collaborating with other freelancers can be a game-changer for your business, allowing you to expand your services, share the workload, and learn new skills. By choosing the right collaborators, setting clear expectations, and maintaining open communication, you can create successful partnerships that benefit everyone involved.
 
 **Action Step:** Identify one potential collaborator this week and reach out to explore ways you might work together on a small project.
-
-![Collaborating with Freelancers](./images/collaborating-freelancers.png)

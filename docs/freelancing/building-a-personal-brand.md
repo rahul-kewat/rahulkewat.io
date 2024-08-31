@@ -57,5 +57,3 @@ Building a strong personal brand is essential for standing out in the crowded fr
 Building a personal brand is a powerful way to differentiate yourself in the freelancing world. By defining your identity, creating a consistent visual presence, and engaging authentically with your audience, you can build a brand that attracts your ideal clients and grows your business.
 
 **Action Step:** Review your current branding and identify areas for improvement. Start by updating your profiles and creating a content plan that reflects your brand.
-
-![Building a Personal Brand](./images/building-a-personal-brand.png)

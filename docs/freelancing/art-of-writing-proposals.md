@@ -62,4 +62,3 @@ Writing proposals is an art that, when mastered, can significantly boost your fr
 
 **Action Step:** Review your most recent proposals, refine your approach using the tips above, and craft a new proposal that speaks directly to your next potential client’s needs.
 
-![Writing Proposals](./images/writing-proposals.png)

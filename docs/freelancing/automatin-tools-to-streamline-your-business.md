@@ -58,4 +58,3 @@ Automation tools are essential for streamlining your freelancing business, allow
 
 **Action Step:** Identify one or two tasks you can automate this week. Set up the necessary tools and test their impact on your productivity.
 
-![Automation Tools](./images/automation-tools.png)

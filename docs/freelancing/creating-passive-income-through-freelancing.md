@@ -54,5 +54,3 @@ Passive income is the dream of many freelancers, offering financial stability wi
 Creating passive income through freelancing is a valuable strategy for achieving financial stability and scaling your earnings. By leveraging your skills to develop digital products, affiliate marketing, or other passive income streams, you can build a more resilient and profitable freelancing business.
 
 **Action Step:** Choose one passive income idea to explore this month. Outline a plan to create, market, and launch your first passive income product.
-
-![Passive Income](./images/passive-income.png)

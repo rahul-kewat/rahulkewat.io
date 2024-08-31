@@ -57,5 +57,3 @@ Giving back to the freelancing community is a powerful way to share your knowled
 Giving back to the freelancing community is a fulfilling way to make a positive impact, support others, and strengthen your professional network. By sharing your knowledge, mentoring, contributing to online communities, and advocating for fair practices, you can help create a more collaborative and supportive environment for all freelancers.
 
 **Action Step:** Identify one way you can give back to the freelancing community this month, whether it’s writing a blog post, offering mentorship, or sharing a valuable resource. Take action and contribute to the growth and success of your fellow freelancers.
-
-![Giving Back](./images/giving-back.png)

@@ -57,5 +57,3 @@ Balancing freelancing with family life can be both rewarding and challenging. Wh
 Balancing freelancing with family life is an ongoing process that requires communication, flexibility, and thoughtful planning. By setting boundaries, involving your family, prioritizing quality time, and managing your workload effectively, you can enjoy the best of both worlds— a successful freelancing career and a fulfilling family life.
 
 **Action Step:** Review your current work-family balance and identify one area for improvement. Make a small change this week to better align your work and family priorities.
-
-![Freelancing and Family Life](./images/freelancing-family-life.png)

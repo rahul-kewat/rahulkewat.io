@@ -35,5 +35,3 @@ With a solid foundation in place, the next step is to refine these strategies, c
 - **Invest in Professional Development:** Continue learning and upskilling to stay competitive and offer even more value to your clients.
 
 **Action Step:** Set specific goals for the next month, such as acquiring a certain number of new clients, increasing your income by a set percentage, or launching a new service.
-
-![Scaling Up](./images/scaling-up.png)

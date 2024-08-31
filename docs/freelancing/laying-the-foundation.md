@@ -13,5 +13,3 @@ Week 1 is about setting the stage for a successful freelancing career. By focusi
 1. **Define Your Goals:** Write down your short-term and long-term objectives.
 2. **Create Your Routine:** Start developing habits that support your productivity and well-being.
 3. **Reflect and Adjust:** Use this week to reflect on your progress and adjust your approach as needed.
-
-![Laying the Foundation](./images/laying-the-foundation.png)

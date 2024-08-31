@@ -63,5 +63,3 @@ Freelancing isn’t just about earning an income—it can also be a pathway to c
 Creating a legacy through freelancing is about more than just the work you do; it’s about the impact you leave behind. By defining your legacy vision, delivering exceptional value, mentoring others, building lasting relationships, and contributing to causes you care about, you can create a lasting, positive impact in your field and beyond.
 
 **Action Step:** Reflect on the legacy you want to create through your freelancing career. Identify one action you can take this week to move closer to that vision, whether it’s mentoring a fellow freelancer, delivering outstanding work, or supporting a cause you care about.
-
-![Creating a Legacy](./images/creating-legacy.png)

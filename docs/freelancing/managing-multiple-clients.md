@@ -62,5 +62,3 @@ As your freelancing business grows, managing multiple clients simultaneously can
 Managing multiple clients effectively is a skill that comes with practice, organization, and the right tools. By prioritizing tasks, setting clear boundaries, and maintaining strong communication, you can handle multiple projects without sacrificing quality or your well-being.
 
 **Action Step:** Choose one new tool or strategy to implement this week to improve your client management process.
-
-![Managing Multiple Clients](./images/managing-multiple-clients.png)

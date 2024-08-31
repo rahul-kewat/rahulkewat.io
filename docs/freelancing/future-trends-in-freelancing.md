@@ -71,5 +71,3 @@ The freelancing landscape is constantly evolving, driven by technological advanc
 The future of freelancing promises exciting opportunities for those who are prepared to adapt, learn, and evolve. By staying ahead of emerging trends, investing in continuous learning, and focusing on personal branding, you can position yourself for success in the evolving freelancing landscape.
 
 **Action Step:** Identify one future trend that resonates with your career goals and set a plan to start exploring it this month, whether it’s learning a new skill, experimenting with a new tool, or enhancing your personal brand.
-
-![Future Trends in Freelancing](./images/future-trends.png)

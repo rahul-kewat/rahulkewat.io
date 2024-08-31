@@ -57,5 +57,3 @@ Continuous learning is essential in freelancing, where industry trends, technolo
 Continuous learning is a vital component of a successful freelancing career. By setting clear learning goals, leveraging online resources, joining professional communities, and consistently applying new skills, you can stay competitive, expand your services, and achieve long-term growth in your freelancing business.
 
 **Action Step:** Identify one skill you want to learn or improve this month. Enroll in a relevant course, workshop, or webinar, and set a plan to practice and apply what you learn.
-
-![Continuous Learning](./images/continuous-learning.png)

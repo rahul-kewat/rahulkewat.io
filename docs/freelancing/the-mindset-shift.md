@@ -24,5 +24,3 @@ Transitioning from a task-focused freelancer to an entrepreneur mindset can sign
 - **Daily Affirmations:** Remind yourself of your goals and capabilities.
 - **Continuous Learning:** Keep enhancing your skills and knowledge base.
 - **Reflect on Successes:** Regularly review what’s working and what needs adjustment.
-
-![Entrepreneurial Mindset](./images/entrepreneurial-mindset.png)

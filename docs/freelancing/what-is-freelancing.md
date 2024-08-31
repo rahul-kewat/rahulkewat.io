@@ -2,7 +2,7 @@
 
 Freelancing is a way of working independently, providing services to clients on a project-by-project basis, often without long-term commitments to any single employer. It's a flexible career option that allows individuals to work on their own terms, choose their clients, and set their rates.
 
-![Freelancer at Work](./images/freelancer-at-work.png)
+<!-- ![Freelancer at Work](./images/freelancer-at-work.png) -->
 
 ## The Rise of Freelancing
 
@@ -31,7 +31,7 @@ Freelancing spans a wide array of industries. Here are some popular freelance pr
 - **Digital Marketing**
 - **Consulting**
 
-![Freelance Professions](./images/freelance-professions.png)
+<!-- ![Freelance Professions](./images/freelance-professions.png) -->
 
 ### Getting Started with Freelancing
 
@@ -65,7 +65,7 @@ Here are some tips to thrive as a freelancer:
 
 Freelancing is an empowering career choice that allows you to control your professional path. Whether you’re looking for flexibility, creative freedom, or a way to escape the 9-to-5 grind, freelancing could be the perfect solution.
 
-![Freelancer Success](./images/freelancer-success.png)
+<!-- ![Freelancer Success](./images/freelancer-success.png) -->
 
 ### Ready to Start Your Freelancing Journey?
 

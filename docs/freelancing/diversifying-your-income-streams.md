@@ -54,5 +54,3 @@ Relying on a single source of income can be risky for freelancers, especially du
 Diversifying your income streams is a smart strategy for any freelancer looking to build financial security and explore new opportunities. By expanding your services, creating digital products, and leveraging your expertise in new ways, you can create a more resilient and prosperous freelancing business.
 
 **Action Step:** Identify one income stream to explore this month. Develop a plan to test it out and measure its potential impact on your overall income.
-
-![Diversifying Income](./images/diversifying-income.png)

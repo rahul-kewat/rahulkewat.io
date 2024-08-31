@@ -57,5 +57,3 @@ Freelancing offers flexibility and freedom, but it also comes with the challenge
 Managing financial uncertainty is a critical skill for freelancers, requiring careful planning, budgeting, and proactive cash flow management. By building an emergency fund, diversifying income streams, planning for taxes, and continuously improving your financial literacy, you can create a stable financial foundation that supports your freelancing career and long-term goals.
 
 **Action Step:** Review your current financial situation and set a goal to build or increase your emergency fund. Start by contributing a small amount each month, and track your progress.
-
-![Managing Financial Uncertainty](./images/financial-uncertainty.png)

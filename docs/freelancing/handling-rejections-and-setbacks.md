@@ -59,5 +59,3 @@ Rejections and setbacks are an inevitable part of freelancing. Whether it’s a 
 Handling rejections and setbacks with resilience and a growth mindset is essential for success in freelancing. By viewing these challenges as opportunities for improvement, seeking constructive feedback, and staying persistent, you can turn setbacks into stepping stones on your path to achieving your goals.
 
 **Action Step:** Reflect on a recent rejection or setback and identify one lesson you can apply to your future work. Use this experience to make a positive change in your approach.
-
-![Handling Rejections](./images/handling-rejections.png)

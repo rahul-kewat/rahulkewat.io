@@ -24,5 +24,3 @@ Effective goal-setting is the backbone of a successful freelancing career. It pr
 - **Write It Down:** Document your goals and keep them visible.
 - **Create a Vision Board:** Visualize your success to keep you inspired.
 - **Accountability:** Share your goals with a mentor or community for added accountability.
-
-![Goal Setting](./images/goal-setting.png)

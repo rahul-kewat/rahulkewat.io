@@ -48,5 +48,3 @@ Testimonials are one of the most powerful tools in your freelancing arsenal. The
 Testimonials are a powerful way to build credibility and attract new clients. By collecting and showcasing authentic, specific feedback, you can demonstrate your value and reliability in a competitive market.
 
 **Action Step:** Reach out to past clients today and request testimonials. Create a system for regularly collecting and updating these valuable endorsements.
-
-![Building Credibility with Testimonials](./images/building-credibility-with-testimonials.png)

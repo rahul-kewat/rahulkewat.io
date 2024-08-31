@@ -57,5 +57,3 @@ As your freelancing career progresses, you might consider transitioning into con
 Transitioning from freelancing to consulting can be a rewarding move that leverages your existing skills and experience in new, impactful ways. By strategically repositioning yourself, refining your offerings, and building relationships with decision-makers, you can make a successful shift into consulting.
 
 **Action Step:** Identify one of your current clients who might benefit from consulting services. Develop a tailored proposal and pitch your new offering to them.
-
-![Freelancing to Consulting](./images/freelancing-to-consulting.png)

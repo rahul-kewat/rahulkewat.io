@@ -2,7 +2,7 @@
 
 Choosing a rewarding career path is more than just finding a job that pays well—it’s about discovering work that fulfills you, aligns with your values, and allows you to make a positive impact. Here’s a guide to help you navigate your way toward a fulfilling career.
 
-![Rewarding Career Path](./images/rewarding-career-path.png)
+<!-- ![Rewarding Career Path](./images/rewarding-career-path.png) -->
 
 ## Why a Rewarding Career Matters
 
@@ -23,7 +23,7 @@ Start by reflecting on what excites you and where your talents lie. Understandin
 - **Self-Assessment Tools:** Use tools like StrengthsFinder or MBTI to gain insights into your personality and strengths.
 - **Reflect on Your Interests:** What activities make you lose track of time? These are often clues to your passions.
 
-![Identify Your Passion](./images/identify-your-passion.png)
+<!-- ![Identify Your Passion](./images/identify-your-passion.png) -->
 
 ### 2. Explore Different Career Options
 
@@ -41,7 +41,7 @@ Defining your career goals gives you a roadmap to follow. Whether it’s gaining
 - **Short-Term Goals:** What can you achieve in the next year?
 - **Long-Term Vision:** Where do you see yourself in 5-10 years?
 
-![Career Goals](./images/career-goals.png)
+<!-- ![Career Goals](./images/career-goals.png) -->
 
 ### 4. Invest in Continuous Learning
 
@@ -59,7 +59,7 @@ Building relationships within your industry can open doors to new opportunities.
 - **Attend Industry Events:** Conferences, webinars, and meetups are great places to connect.
 - **Leverage Social Media:** Platforms like LinkedIn can help you connect with professionals and showcase your expertise.
 
-![Networking](./images/networking.png)
+<!-- ![Networking](./images/networking.png) -->
 
 ### 6. Seek Mentorship and Guidance
 
@@ -84,7 +84,7 @@ A rewarding career isn’t something you find overnight—it’s something you b
 **Ready to Start Your Journey?**  
 Take the first step today and start building the career you’ve always dreamed of!
 
-![Start Your Career Journey](./images/start-career-journey.png)
+<!-- ![Start Your Career Journey](./images/start-career-journey.png) -->
 
 ---
 

@@ -56,5 +56,3 @@ Social proof is the concept that people will follow the actions of others when m
 Leveraging social proof can significantly enhance your freelancing business by building trust and convincing potential clients of your value. By strategically gathering and showcasing testimonials, case studies, and endorsements, you can turn satisfied clients into your strongest advocates.
 
 **Action Step:** Reach out to past clients this week and request testimonials. Begin drafting a case study for one of your most successful projects.
-
-![Leveraging Social Proof](./images/leveraging-social-proof.png)

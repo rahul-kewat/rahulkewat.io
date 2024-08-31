@@ -50,5 +50,3 @@ Clients often prefer experienced freelancers because they equate experience with
 Overcoming the “no experience” objection is about reframing your skills, showcasing your potential, and demonstrating your commitment to delivering great work. By proactively addressing this concern and highlighting your unique strengths, you can win over clients and start building your freelancing portfolio.
 
 **Action Step:** Create two or three sample projects this week to add to your portfolio. Use them to demonstrate your skills and build confidence in your proposals.
-
-![Overcoming No Experience](./images/overcoming-no-experience.png)

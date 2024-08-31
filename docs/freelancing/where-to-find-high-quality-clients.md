@@ -51,5 +51,3 @@ Finding high-quality clients is a crucial part of building a successful freelanc
 Finding high-quality clients requires strategy, persistence, and a clear understanding of where your ideal clients are. By leveraging the right platforms, building your network, and showcasing your expertise, you can connect with clients who value your work and are willing to invest in your services.
 
 **Action Step:** Choose one platform or method to focus on this week. Refine your approach and start reaching out to potential clients.
-
-![Finding High-Quality Clients](./images/finding-high-quality-clients.png)

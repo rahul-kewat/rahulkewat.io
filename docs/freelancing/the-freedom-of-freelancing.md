@@ -56,5 +56,3 @@ One of the greatest appeals of freelancing is the freedom it offers—freedom to
 The freedom of freelancing is one of its most rewarding aspects, allowing you to design a career that fits your lifestyle and passions. By embracing this freedom, setting your own rules, and maintaining discipline, you can enjoy a fulfilling and successful freelance career.
 
 **Action Step:** Reflect on what aspects of freedom are most important to you in freelancing. Make a plan to incorporate more of these elements into your daily routine.
-
-![Freedom of Freelancing](./images/freedom-of-freelancing.png)

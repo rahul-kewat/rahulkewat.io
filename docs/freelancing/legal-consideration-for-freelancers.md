@@ -57,5 +57,3 @@ Navigating the legal aspects of freelancing is essential to protect your busines
 Understanding the legal aspects of freelancing is crucial to protecting your business and ensuring smooth client relationships. By using contracts, managing intellectual property rights, complying with tax obligations, and handling disputes professionally, you can minimize legal risks and focus on growing your freelance career.
 
 **Action Step:** Review your current contracts and legal documents. Update them to ensure they fully protect your interests and align with best practices.
-
-![Legal Considerations for Freelancers](./images/legal-considerations.png)

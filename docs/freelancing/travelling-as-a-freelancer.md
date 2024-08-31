@@ -51,5 +51,3 @@ One of the most exciting perks of freelancing is the ability to work from anywhe
 Traveling as a freelancer offers unparalleled freedom and adventure, allowing you to explore the world while maintaining your career. By planning your work schedule, choosing the right destinations, and staying organized, you can successfully balance work and travel, making the most of both experiences.
 
 **Action Step:** Choose your next travel destination and outline a plan for balancing work and exploration. Research co-working spaces and make a schedule that allows you to stay productive while enjoying your travels.
-
-![Traveling as a Freelancer](./images/traveling-freelancer.png)

@@ -59,5 +59,3 @@ Once you’ve established a steady flow of work, the next step is to scale your 
 Scaling your freelancing income is about working smarter, not harder. By increasing your rates, diversifying your services, and focusing on efficiency, you can build a sustainable and profitable freelancing business.
 
 **Action Step:** Identify one or two strategies from this list to implement over the next month. Track your progress and adjust your approach as needed.
-
-![Scaling Freelancing Income](./images/scaling-freelancing-income.png)

@@ -57,5 +57,3 @@ Networking is a powerful tool for freelancers, opening doors to new opportunitie
 Networking is an invaluable aspect of freelancing that can lead to new opportunities, collaborations, and long-term success. By attending events, leveraging online platforms, building genuine relationships, and showcasing your expertise, you can create a strong and supportive network that enhances your freelancing career.
 
 **Action Step:** Identify one networking event or online group to join this month. Set a goal to connect with at least three new professionals and start building genuine relationships.
-
-![Networking](./images/networking.png)

@@ -63,5 +63,3 @@ Freelancing is not just a career choice; it’s also a journey of personal growt
 Personal growth is an integral part of freelancing that enhances your adaptability, resilience, and overall fulfillment. By setting personal goals, embracing continuous learning, cultivating resilience, and focusing on self-care, you can create a well-rounded and rewarding freelancing journey that supports both your career and personal aspirations.
 
 **Action Step:** Choose one area of personal growth to focus on this month, whether it’s developing a new skill, improving your health, or stepping out of your comfort zone. Set a clear plan and take the first step today.
-
-![Personal Growth](./images/personal-growth.png)

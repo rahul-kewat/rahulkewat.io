@@ -36,5 +36,3 @@ With a strong foundation in embracing the freelancing lifestyle, your focus now 
 - **Maintain Your Support Network:** Keep building and nurturing your support network, as it plays a crucial role in your long-term motivation and resilience.
 
 **Action Step:** Set a personal goal for the next month that aligns with embracing the freelancing lifestyle, such as taking a workcation, reducing your workload for a better balance, or trying a new work environment.
-
-![Embracing the Freelancing Lifestyle](./images/embracing-lifestyle.png)

@@ -19,5 +19,3 @@ Self-doubt can be the most significant barrier to success in freelancing. Learni
 - **Set Achievable Goals:** Small wins build confidence over time.
 - **Continuous Learning:** Improve your skills to feel more competent and confident.
 - **Surround Yourself with Positivity:** Engage with supportive communities and mentors who uplift you.
-
-![Overcoming Self-Doubt](./images/overcoming-self-doubt.png)

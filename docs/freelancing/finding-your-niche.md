@@ -44,5 +44,3 @@ A niche is a specific segment of the market that you specialize in. It’s a com
 Finding your niche is not just about narrowing your focus; it’s about positioning yourself as the go-to expert for a specific type of client. By niching down, you can create a more sustainable and profitable freelancing business that aligns with your strengths and passions.
 
 **Action Step:** Take some time today to reflect on your skills, research potential niches, and define your unique position in the freelancing market.
-
-![Finding Your Niche](./images/finding-your-niche.png)

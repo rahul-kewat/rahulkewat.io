@@ -56,5 +56,3 @@ Landing your first freelancing gig can be one of the most challenging steps in y
 Your first freelancing gig is just the beginning of your journey. By building a solid foundation, leveraging your network, and strategically applying for opportunities, you can secure that first project and build momentum for your freelancing career.
 
 **Action Step:** Set a goal to apply for a certain number of projects this week. Use the tips above to tailor your approach and increase your chances of landing your first gig.
-
-![First Freelancing Gig](./images/first-freelancing-gig.png)

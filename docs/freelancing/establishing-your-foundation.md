@@ -32,5 +32,3 @@ The foundation you’ve established will support your journey as you begin to se
 - **Review and Adjust:** Regularly review your profile, portfolio, and proposals to ensure they remain relevant and effective.
 
 **Action Step:** Continue to refine your foundation. Make adjustments as needed based on your experiences and feedback from clients.
-
-![Establishing Your Foundation](./images/establishing-your-foundation.png)

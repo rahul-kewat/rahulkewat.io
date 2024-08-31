@@ -61,5 +61,3 @@ Positioning yourself as an expert in your field is a powerful way to attract hig
 Positioning yourself as an expert takes time, effort, and consistency, but the rewards are well worth it. By focusing on your niche, creating valuable content, leveraging social proof, and actively engaging with your audience, you can establish yourself as a trusted authority in your field.
 
 **Action Step:** Choose one expert positioning strategy to implement this week, such as writing a blog post, hosting a webinar, or reaching out for a guest speaking opportunity.
-
-![Positioning Yourself as an Expert](./images/positioning-expert.png)

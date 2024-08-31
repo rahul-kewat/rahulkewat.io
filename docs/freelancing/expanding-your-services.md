@@ -59,5 +59,3 @@ Expanding your service offerings is a powerful way to grow your freelancing busi
 Expanding your services is a strategic way to grow your freelancing business. By thoughtfully adding complementary services, upskilling, and effectively marketing your expanded offerings, you can attract more clients, retain existing ones, and increase your income.
 
 **Action Step:** Identify one new service to add to your offerings this month. Take steps to learn, test, and market this service to your existing and potential clients.
-
-![Expanding Services](./images/expanding-services.png)

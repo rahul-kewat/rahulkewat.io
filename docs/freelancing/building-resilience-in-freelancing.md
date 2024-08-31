@@ -63,5 +63,3 @@ Freelancing is a journey filled with highs and lows, and building resilience is 
 Building resilience is a vital skill for freelancers, enabling you to navigate the ups and downs of your career with confidence and adaptability. By embracing a growth mindset, developing problem-solving skills, nurturing your support network, and prioritizing self-care, you can build the resilience needed to thrive in freelancing.
 
 **Action Step:** Reflect on a recent challenge you faced and how you responded. Identify one strategy from this guide that you can use to enhance your resilience in future situations.
-
-![Building Resilience](./images/building-resilience.png)

@@ -26,5 +26,3 @@ I began with minimal experience, taking on small gigs to build a portfolio and g
 - **Start Small:** Don't be afraid to take on smaller projects to build your portfolio.
 - **Set Clear Goals:** Define what success looks like for you and work steadily towards it.
 - **Keep Learning:** The freelancing landscape is always changing—stay ahead by constantly updating your skills.
-
-![Freelancer Journey](./images/freelancer-journey.png)

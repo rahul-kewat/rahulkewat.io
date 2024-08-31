@@ -56,5 +56,3 @@ Freelancing offers the flexibility to set your own schedule and work from anywhe
 Maintaining a healthy work-life balance is essential for long-term success and well-being in freelancing. By setting boundaries, prioritizing tasks, taking breaks, and making time for personal activities, you can enjoy a more fulfilling and sustainable freelancing career.
 
 **Action Step:** Review your current work-life balance and identify one area where you can make a positive change this week, such as setting work hours, taking breaks, or scheduling personal time.
-
-![Work-Life Balance](./images/work-life-balance.png)

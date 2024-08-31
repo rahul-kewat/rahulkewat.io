@@ -19,5 +19,3 @@ Creating a structured routine can help you maximize productivity, manage your ti
 - **Start Small:** Begin with a simple routine and gradually build on it as you get comfortable.
 - **Track Your Progress:** Use a journal or productivity app to monitor how well you stick to your routine.
 - **Adapt as Needed:** Be flexible—adjust your routine based on what works best for you.
-
-![Success Routine](./images/success-routine.png)

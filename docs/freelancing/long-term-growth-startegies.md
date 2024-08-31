@@ -33,5 +33,3 @@ With these long-term growth strategies in place, your focus should now shift to 
 - **Optimize Team Management:** As your team grows, focus on refining your management skills, setting clear goals, and maintaining a positive team culture.
 
 **Action Step:** Set goals for the next month to solidify your long-term growth strategies, such as increasing your content output, securing a new collaboration, or launching a new passive income product.
-
-![Long-Term Growth Strategies](./images/long-term-growth.png)

@@ -63,5 +63,3 @@ Persistence is one of the most valuable traits a freelancer can possess. In the 
 The power of persistence lies in its ability to keep you moving forward, regardless of the obstacles you face. By setting clear goals, embracing a growth mindset, developing resilience, and seeking support, you can harness persistence to achieve your freelancing aspirations. Remember, persistence isn’t about never failing; it’s about always getting back up and continuing the journey.
 
 **Action Step:** Identify one area of your freelancing business where you feel challenged. Commit to applying persistence by taking consistent action, seeking support, and staying focused on your long-term vision.
-
-![The Power of Persistence](./images/persistence.png)

@@ -57,5 +57,3 @@ Congratulations on completing this journey through the freelancing world! Whethe
 Freelancing offers endless possibilities for creativity, independence, and growth. By applying the strategies and insights you’ve learned, you can continue to build a successful and fulfilling freelancing career. Remember, your journey is unique, and there is no one-size-fits-all approach. Trust yourself, stay persistent, and keep exploring new ways to make your freelancing dreams a reality.
 
 **Action Step:** Choose one area of focus from your next steps and take action today. Whether it’s setting a new goal, expanding your network, or enhancing your brand, every step brings you closer to your ideal freelancing career.
-
-![Conclusion and Next Steps](./images/conclusion-next-steps.png)

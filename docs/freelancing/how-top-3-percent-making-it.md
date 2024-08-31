@@ -2,7 +2,7 @@
 
 The top 3% of freelancers have mastered the art of freelancing, consistently landing high-paying gigs and building a sustainable, thriving career. But what sets them apart from the rest? Let’s explore the strategies and habits that help these elite freelancers stay at the top of their game.
 
-![Freelancer Success](./images/top-freelancer-success.png)
+<!-- ![Freelancer Success](./images/top-freelancer-success.png) -->
 
 ## 1. Specialization and Niching Down
 
@@ -20,7 +20,7 @@ Your personal brand is your business card in the freelance world. The top 3% inv
 - **Create a Portfolio:** Highlight your best work and the results you've achieved.
 - **Leverage Social Media:** Use LinkedIn, Twitter, and other platforms to share insights and connect with potential clients.
 
-![Personal Brand](./images/personal-branding.png)
+<!-- ![Personal Brand](./images/personal-branding.png) -->
 
 ## 3. Exceptional Client Management
 
@@ -45,7 +45,7 @@ Staying relevant in the ever-evolving freelance market requires continuous learn
 - **Stay Updated:** Follow industry blogs, podcasts, and webinars.
 - **Learn New Skills:** Expand your service offerings with complementary skills.
 
-![Continuous Learning](./images/continuous-learning.png)
+<!-- ![Continuous Learning](./images/continuous-learning.png) -->
 
 ## 6. Networking and Building Relationships
 
@@ -70,7 +70,7 @@ While there's no single formula for success, following these strategies can set 
 **Ready to Elevate Your Freelancing Career?**  
 Implement these habits, and you’ll be well on your way to joining the top 3% of freelancers who truly make it!
 
-![Join the Top 3%](./images/join-top-3-percent.png)
+<!-- ![Join the Top 3%](./images/join-top-3-percent.png) -->
 
 ---
 

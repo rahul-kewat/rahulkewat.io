@@ -57,5 +57,3 @@ While finding new clients is essential, retaining existing ones is even more val
 Client retention is a critical component of a successful freelancing business. By focusing on delivering consistent quality, effective communication, and building strong relationships, you can turn one-time clients into repeat business, providing stability and growth for your freelance career.
 
 **Action Step:** Reach out to your existing clients this week with a value-added offer or simply to check in. Strengthen your relationships and explore opportunities for additional work.
-
-![Client Retention](./images/client-retention.png)

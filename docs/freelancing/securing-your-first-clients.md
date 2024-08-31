@@ -33,5 +33,3 @@ Now that you’ve started to secure clients, the next steps will focus on refini
 - **Seek Referrals:** Encourage satisfied clients to refer you to others in their network.
 
 **Action Step:** Set a goal to apply for a specific number of projects or connect with a set number of new contacts this week. Use the strategies learned to maximize your chances of success.
-
-![Securing Clients](./images/securing-clients.png)

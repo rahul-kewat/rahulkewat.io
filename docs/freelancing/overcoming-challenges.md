@@ -36,5 +36,3 @@ With a comprehensive understanding of how to overcome challenges in freelancing,
 - **Strengthen Client Relationships:** Continue to refine your client management skills, focusing on clear communication, setting expectations, and maintaining boundaries.
 
 **Action Step:** Choose one challenge from this week that resonated with you and set a specific action plan to address it in the coming week.
-
-![Overcoming Challenges](./images/overcoming-challenges.png)

@@ -56,5 +56,3 @@ In freelancing, who you know can be just as important as what you know. Effectiv
 Effective networking is about building lasting relationships that provide mutual value. By engaging genuinely, offering help, and maintaining a consistent presence on key platforms, you can expand your network and unlock new opportunities for your freelancing business.
 
 **Action Step:** Choose one platform to focus on this week. Update your profile, make connections, and start engaging meaningfully with your network.
-
-![Networking Online](./images/networking-online.png)

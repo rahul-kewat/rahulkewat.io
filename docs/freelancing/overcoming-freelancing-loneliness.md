@@ -63,5 +63,3 @@ Freelancing offers many benefits, but it can also be isolating. Working alone, o
 Overcoming freelancing loneliness requires intentional efforts to build connections and engage with others. By joining communities, utilizing co-working spaces, collaborating with peers, and maintaining a healthy work-life balance, you can foster a sense of belonging and thrive both personally and professionally.
 
 **Action Step:** Choose one strategy to implement this week to combat freelancing loneliness, such as joining a new community, scheduling a coffee meetup, or attending a networking event.
-
-![Overcoming Freelancing Loneliness](./images/freelancing-loneliness.png)

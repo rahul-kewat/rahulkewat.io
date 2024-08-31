@@ -59,5 +59,3 @@ Freelancers often encounter difficult clients who can make projects challenging,
 Dealing with difficult clients is part of freelancing, but it doesn’t have to derail your business. By setting clear expectations, maintaining professionalism, establishing boundaries, and addressing issues early, you can manage challenging client relationships effectively and protect your well-being and business success.
 
 **Action Step:** Review your current client contracts and communication processes. Identify one area where you can tighten expectations or boundaries to better manage client relationships.
-
-![Dealing with Difficult Clients](./images/difficult-clients.png)

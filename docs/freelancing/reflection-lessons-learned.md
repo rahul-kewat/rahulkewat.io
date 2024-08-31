@@ -63,5 +63,3 @@ Reflection is a powerful tool for growth and self-awareness. As a freelancer, ta
 Reflecting on your freelancing journey allows you to celebrate your progress, learn from your experiences, and set a clear path for the future. By taking time to review your achievements, analyze challenges, evaluate your goals, and assess your balance, you can continue to grow and thrive in your freelancing career.
 
 **Action Step:** Set aside time this week for a reflection session. Use the steps outlined in this guide to review your freelancing journey and identify key lessons and areas for growth.
-
-![Reflection](./images/reflection.png)

@@ -63,5 +63,3 @@ Freelancing offers freedom and flexibility, but it also requires a high level of
 Staying motivated as a freelancer requires a proactive approach, self-discipline, and a commitment to your goals. By setting clear goals, maintaining a positive routine, staying connected with your purpose, and taking care of your well-being, you can sustain your motivation and enjoy a fulfilling and successful freelancing career.
 
 **Action Step:** Set a short-term goal for this week and outline the steps to achieve it. Celebrate when you reach it, and use the momentum to set your next goal.
-
-![Staying Motivated](./images/staying-motivated.png)

@@ -63,5 +63,3 @@ Freelancing offers a world of opportunities, but taking the leap can be daunting
 Encouraging others to take the leap into freelancing is a rewarding way to give back and support the growth of the community. By sharing your story, offering practical advice, providing mentorship, and celebrating their progress, you can help aspiring freelancers build the confidence and skills they need to succeed.
 
 **Action Step:** Reach out to someone who has expressed interest in freelancing and offer your support. Whether it’s a chat over coffee, sharing a resource, or simply providing encouragement, your support can make a meaningful difference in their journey.
-
-![Encouraging Others](./images/encouraging-others.png)
