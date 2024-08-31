@@ -208,7 +208,7 @@ export default defineConfig({
       ],
       // 'tools': [
       //   {
-      //     text: 'AI Tools',
+      //     text: 'AI Tools',s
       //     collapsible: true,
       //     collapsed: false,
       //     items: generateSidebarItems('/tools/',[
