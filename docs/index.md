@@ -11,14 +11,14 @@ hero:
   tagline: Get Expert Guidance that you need
   actions:
     - theme: brand
-      text: Get a Expert Advice
+      text: Get an Expert Advice
       link: /guide/what-is-vitepress
     - theme: alt
       text: Quickstart
-      link: /guide/getting-started
-    - theme: alt
-      text: GitHub
-      link: https://github.com/vuejs/vitepress
+      link: /freelancing/
+    # - theme: alt
+    #   text: GitHub
+    #   link: https://github.com/vuejs/vitepress
   image:
     src: /rahul_kewat.png
     alt: VitePress

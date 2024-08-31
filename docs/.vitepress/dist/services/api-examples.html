@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | Rahul Kewat</title>
+    <meta name="description" content="Learn How I made $100k in just a few years">
+    <meta name="generator" content="VitePress v1.3.4">
+    <link rel="preload stylesheet" href="/assets/style.D5gNUVwP.css" as="style">
+    
+    <script type="module" src="/assets/app.BxCytndh.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.BdbVQLkK.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.C5BILcX6.js">
+    <link rel="modulepreload" href="/assets/services_api-examples.md.IEykUXSE.lean.js">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-5d98c3a5><!--[--><!--]--><!--[--><span tabindex="-1" data-v-0f60ec36></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-0f60ec36> Skip to content </a><!--]--><!----><header class="VPNav" data-v-5d98c3a5 data-v-ae24b3ad><div class="VPNavBar top" data-v-ae24b3ad data-v-6aa21345><div class="wrapper" data-v-6aa21345><div class="container" data-v-6aa21345><div class="title" data-v-6aa21345><div class="VPNavBarTitle" data-v-6aa21345 data-v-ab179fa1><a class="title" href="/" data-v-ab179fa1><!--[--><!--]--><!--[--><img class="VPImage logo" src="/rahulkewat_logo.png" alt data-v-8426fc1a><!--]--><span data-v-ab179fa1>Rahul Kewat</span><!--[--><!--]--></a></div></div><div class="content" data-v-6aa21345><div class="content-body" data-v-6aa21345><!--[--><!--]--><div class="VPNavBarSearch search" data-v-6aa21345><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-6aa21345 data-v-dc692963><span id="main-nav-aria-label" class="visually-hidden" data-v-dc692963> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-dc692963 data-v-9c663999><!--[--><span data-v-9c663999>Home</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/freelancing/" tabindex="0" data-v-dc692963 data-v-9c663999><!--[--><span data-v-9c663999>Freelancing</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-6aa21345 data-v-6c893767><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-6c893767 data-v-5337faa4 data-v-1d5665e3><span class="check" data-v-1d5665e3><span class="icon" data-v-1d5665e3><!--[--><span class="vpi-sun sun" data-v-5337faa4></span><span class="vpi-moon moon" data-v-5337faa4></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-6aa21345 data-v-0394ad82 data-v-7bc22406><!--[--><a class="VPSocialLink no-icon" href="https://www.upwork.com/freelancers/~017e44b615de910457" aria-label target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="Upwork"> <path fill="#42ff1b" d="M18.561,5.025c-2.539,0-4.51,1.647-5.31,4.362c-1.22-1.832-2.148-4.032-2.687-5.886H7.828v7.105c-0.002,1.404-1.141,2.543-2.547,2.545c-1.406-0.002-2.543-1.142-2.545-2.545V3.5H0v7.105c0,2.911,2.371,5.298,5.282,5.298c2.913,0,5.283-2.387,5.283-5.298V9.416c0.529,1.106,1.182,2.228,1.974,3.219L10.865,20.5h2.797l1.213-5.705c1.063,0.679,2.285,1.109,3.686,1.109c3,0,5.439-2.45,5.439-5.445C24,7.461,21.561,5.025,18.561,5.025L18.561,5.025z M18.561,13.157c-1.102,0-2.135-0.467-3.074-1.227l0.228-1.074l0.008-0.042c0.207-1.143,0.849-3.058,2.839-3.058c1.492,0,2.703,1.211,2.703,2.7C21.264,11.945,20.053,13.157,18.561,13.157L18.561,13.157z" class="color6cd441 svgShape"></path><path fill="#4fb939" d="M12,15.165L10.865,20.5H12V15.165L12,15.165z M10.564,3.5H7.828v7.105c-0.002,1.404-1.141,2.543-2.547,2.545c-1.406-0.002-2.543-1.142-2.545-2.545V3.5H0v7.105c0,2.911,2.371,5.298,5.282,5.298c2.913,0,5.283-2.387,5.283-5.298V9.416c0.404,0.845,0.88,1.699,1.436,2.497V7.194C11.386,5.943,10.9,4.655,10.564,3.5L10.564,3.5z" class="color5eb939 svgShape"></path></svg></a><a class="VPSocialLink no-icon" href="https://www.youtube.com/@irahulkewat" aria-label="youtube" target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><span class="vpi-social-youtube" /></a><a class="VPSocialLink no-icon" href="https://www.linkedin.com/in/rahulkewat/" aria-label="linkedin" target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><span class="vpi-social-linkedin" /></a><a class="VPSocialLink no-icon" href="https://github.com/rahul-kewat" aria-label="github" target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><span class="vpi-social-github" /></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-6aa21345 data-v-bb2aa2f0 data-v-b6c34ac9><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-b6c34ac9><span class="vpi-more-horizontal icon" data-v-b6c34ac9></span></button><div class="menu" data-v-b6c34ac9><div class="VPMenu" data-v-b6c34ac9 data-v-b98bc113><!----><!--[--><!--[--><!----><div class="group" data-v-bb2aa2f0><div class="item appearance" data-v-bb2aa2f0><p class="label" data-v-bb2aa2f0>Appearance</p><div class="appearance-action" data-v-bb2aa2f0><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-bb2aa2f0 data-v-5337faa4 data-v-1d5665e3><span class="check" data-v-1d5665e3><span class="icon" data-v-1d5665e3><!--[--><span class="vpi-sun sun" data-v-5337faa4></span><span class="vpi-moon moon" data-v-5337faa4></span><!--]--></span></span></button></div></div></div><div class="group" data-v-bb2aa2f0><div class="item social-links" data-v-bb2aa2f0><div class="VPSocialLinks social-links-list" data-v-bb2aa2f0 data-v-7bc22406><!--[--><a class="VPSocialLink no-icon" href="https://www.upwork.com/freelancers/~017e44b615de910457" aria-label target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="Upwork"> <path fill="#42ff1b" d="M18.561,5.025c-2.539,0-4.51,1.647-5.31,4.362c-1.22-1.832-2.148-4.032-2.687-5.886H7.828v7.105c-0.002,1.404-1.141,2.543-2.547,2.545c-1.406-0.002-2.543-1.142-2.545-2.545V3.5H0v7.105c0,2.911,2.371,5.298,5.282,5.298c2.913,0,5.283-2.387,5.283-5.298V9.416c0.529,1.106,1.182,2.228,1.974,3.219L10.865,20.5h2.797l1.213-5.705c1.063,0.679,2.285,1.109,3.686,1.109c3,0,5.439-2.45,5.439-5.445C24,7.461,21.561,5.025,18.561,5.025L18.561,5.025z M18.561,13.157c-1.102,0-2.135-0.467-3.074-1.227l0.228-1.074l0.008-0.042c0.207-1.143,0.849-3.058,2.839-3.058c1.492,0,2.703,1.211,2.703,2.7C21.264,11.945,20.053,13.157,18.561,13.157L18.561,13.157z" class="color6cd441 svgShape"></path><path fill="#4fb939" d="M12,15.165L10.865,20.5H12V15.165L12,15.165z M10.564,3.5H7.828v7.105c-0.002,1.404-1.141,2.543-2.547,2.545c-1.406-0.002-2.543-1.142-2.545-2.545V3.5H0v7.105c0,2.911,2.371,5.298,5.282,5.298c2.913,0,5.283-2.387,5.283-5.298V9.416c0.404,0.845,0.88,1.699,1.436,2.497V7.194C11.386,5.943,10.9,4.655,10.564,3.5L10.564,3.5z" class="color5eb939 svgShape"></path></svg></a><a class="VPSocialLink no-icon" href="https://www.youtube.com/@irahulkewat" aria-label="youtube" target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><span class="vpi-social-youtube" /></a><a class="VPSocialLink no-icon" href="https://www.linkedin.com/in/rahulkewat/" aria-label="linkedin" target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><span class="vpi-social-linkedin" /></a><a class="VPSocialLink no-icon" href="https://github.com/rahul-kewat" aria-label="github" target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><span class="vpi-social-github" /></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-6aa21345 data-v-e5dd9c1c><span class="container" data-v-e5dd9c1c><span class="top" data-v-e5dd9c1c></span><span class="middle" data-v-e5dd9c1c></span><span class="bottom" data-v-e5dd9c1c></span></span></button></div></div></div></div><div class="divider" data-v-6aa21345><div class="divider-line" data-v-6aa21345></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-5d98c3a5 data-v-a6f0e41e><div class="container" data-v-a6f0e41e><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-a6f0e41e data-v-17a5e62e><button data-v-17a5e62e>Return to top</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-5d98c3a5 data-v-1428d186><div class="VPDoc has-aside" data-v-1428d186 data-v-39a288b8><!--[--><!--]--><div class="container" data-v-39a288b8><div class="aside" data-v-39a288b8><div class="aside-curtain" data-v-39a288b8></div><div class="aside-container" data-v-39a288b8><div class="aside-content" data-v-39a288b8><div class="VPDocAside" data-v-39a288b8 data-v-3f215769><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-3f215769 data-v-a5bbad30><div class="content" data-v-a5bbad30><div class="outline-marker" data-v-a5bbad30></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-a5bbad30>On this page</div><ul class="VPDocOutlineItem root" data-v-a5bbad30 data-v-b933a997><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-3f215769></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-39a288b8><div class="content-container" data-v-39a288b8><!--[--><!--]--><main class="main" data-v-39a288b8><div style="position:relative;" class="vp-doc _services_api-examples" data-v-39a288b8><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useData } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">theme</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">page</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">frontmatter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useData</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;--shiki-light-font-weight:bold;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;--shiki-light-font-weight:bold;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ theme }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ page }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ frontmatter }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;logo&quot;: &quot;/rahulkewat_logo.png&quot;,
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;Home&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;Freelancing&quot;,
+      &quot;link&quot;: &quot;/freelancing/&quot;
+    }
+  ],
+  &quot;sidebar&quot;: {
+    &quot;/freelancing/&quot;: [
+      {
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;What is freelancing&quot;,
+            &quot;link&quot;: &quot;/freelancing/what-is-freelancing&quot;
+          },
+          {
+            &quot;text&quot;: &quot;How top 3% are making it&quot;,
+            &quot;link&quot;: &quot;/freelancing/how-top-3-percent-making-it&quot;
+          },
+          {
+            &quot;text&quot;: &quot;Rewarding career path&quot;,
+            &quot;link&quot;: &quot;/freelancing/rewarding-career-path&quot;
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;Introduction &amp; Mindset&quot;,
+        &quot;collapsible&quot;: true,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;items&quot;: [
+              {
+                &quot;text&quot;: &quot;My Freelancing Journey - From $0 to $100k&quot;,
+                &quot;link&quot;: &quot;/freelancing/my-freelancing-journey&quot;
+              },
+              {
+                &quot;text&quot;: &quot;The Mindset Shift - Thinking Like an Entrepreneur&quot;,
+                &quot;link&quot;: &quot;/freelancing/the-mindset-shift&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Setting Goals - The Roadmap to Success&quot;,
+                &quot;link&quot;: &quot;/freelancing/setting-goals&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Overcoming Self-Doubt - Your Biggest Barrier&quot;,
+                &quot;link&quot;: &quot;/freelancing/overcoming-self-doubt&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Building a Success Routine&quot;,
+                &quot;link&quot;: &quot;/freelancing/building-a-success-routine&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Embracing the Freelancing Lifestyle&quot;,
+                &quot;link&quot;: &quot;/freelancing/embracing-the-freelancing-lifestyle&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Summary of Week 1 - Laying the Foundation&quot;,
+                &quot;link&quot;: &quot;/freelancing/laying-the-foundation&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;Setting Up for Success&quot;,
+        &quot;collapsible&quot;: true,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;items&quot;: [
+              {
+                &quot;text&quot;: &quot;Finding Your Niche - Why It Matters&quot;,
+                &quot;link&quot;: &quot;/freelancing/finding-your-niche&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Creating a Standout Profile - Your First Impression&quot;,
+                &quot;link&quot;: &quot;/freelancing/creating-a-standout-profile&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Crafting a Winning Portfolio&quot;,
+                &quot;link&quot;: &quot;/freelancing/creating-a-winning-portfolio&quot;
+              },
+              {
+                &quot;text&quot;: &quot;The Art of Writing Proposals&quot;,
+                &quot;link&quot;: &quot;/freelancing/art-of-writing-proposals&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Pricing Your Services Right&quot;,
+                &quot;link&quot;: &quot;/freelancing/pricing-your-services-right&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Building Credibility with Testimonials&quot;,
+                &quot;link&quot;: &quot;/freelancing/building-credibility-with-testimonials&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Summary of Week 2 - Establishing Your Foundation&quot;,
+                &quot;link&quot;: &quot;/freelancing/establishing-your-foundation&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;Getting Your First Clients&quot;,
+        &quot;collapsible&quot;: true,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;items&quot;: [
+              {
+                &quot;text&quot;: &quot;Where to Find High-Quality Clients&quot;,
+                &quot;link&quot;: &quot;/freelancing/where-to-find-high-quality-clients&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Networking Online - Building Relationships That Matter&quot;,
+                &quot;link&quot;: &quot;/freelancing/building-relationship-that-matter&quot;
+              },
+              {
+                &quot;text&quot;: &quot;How to Get Your First Freelancing Gig&quot;,
+                &quot;link&quot;: &quot;/freelancing/get-your-first-freelancing-gig&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Leveraging Social Proof&quot;,
+                &quot;link&quot;: &quot;/freelancing/leveraging-social-proof&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Overcoming the “No Experience” Objection&quot;,
+                &quot;link&quot;: &quot;/freelancing/overcoming-no-experience-objection&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Closing Deals - The Follow-Up Strategy&quot;,
+                &quot;link&quot;: &quot;/freelancing/closing-deals-the-followup-strategy&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Summary of Week 3 - Securing Your First Clients&quot;,
+                &quot;link&quot;: &quot;/freelancing/securing-your-first-clients&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;Scaling Your Freelancing Business&quot;,
+        &quot;collapsible&quot;: true,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;items&quot;: [
+              {
+                &quot;text&quot;: &quot;Scaling Your Freelancing Income&quot;,
+                &quot;link&quot;: &quot;/freelancing/scailing-your-freelancing-income&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Expanding Your Services&quot;,
+                &quot;link&quot;: &quot;/freelancing/expanding-your-services&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Managing Multiple Clients&quot;,
+                &quot;link&quot;: &quot;/freelancing/managing-multiple-clients&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Building a Personal Brand&quot;,
+                &quot;link&quot;: &quot;/freelancing/building-a-personal-brand&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Automation Tools to Streamline Your Business&quot;,
+                &quot;link&quot;: &quot;/freelancing/automatin-tools-to-streamline-your-business&quot;
+              },
+              {
+                &quot;text&quot;: &quot;The Importance of Client Retention&quot;,
+                &quot;link&quot;: &quot;/freelancing/the-importance-of-client-retention&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Summary of Week 4 - Scaling Up&quot;,
+                &quot;link&quot;: &quot;/freelancing/scaling-up&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;Advanced Strategies and Long-Term Growth&quot;,
+        &quot;collapsible&quot;: true,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;items&quot;: [
+              {
+                &quot;text&quot;: &quot;Diversifying Your Income Streams&quot;,
+                &quot;link&quot;: &quot;/freelancing/diversifying-your-income-streams&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Moving from Freelancing to Consulting&quot;,
+                &quot;link&quot;: &quot;/freelancing/moving-from-freelancing-consulting&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Creating Passive Income through Freelancing&quot;,
+                &quot;link&quot;: &quot;/freelancing/creating-passive-income-through-freelancing&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Building a Team to Expand Your Business&quot;,
+                &quot;link&quot;: &quot;/freelancing/building-a-team-to-expand-your-business&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Positioning Yourself as an Expert&quot;,
+                &quot;link&quot;: &quot;/freelancing/positioning-yourself-as-an-expert&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Collaborating with Other Freelancers&quot;,
+                &quot;link&quot;: &quot;/freelancing/collaborating-with-other-freelancers&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Summary of Week 5 - Long-Term Growth Strategies&quot;,
+                &quot;link&quot;: &quot;/freelancing/long-term-growth-startegies&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;The Freelancing Lifestyle&quot;,
+        &quot;collapsible&quot;: true,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;items&quot;: [
+              {
+                &quot;text&quot;: &quot;Maintaining Work-Life Balance&quot;,
+                &quot;link&quot;: &quot;/freelancing/maintaining-work-life-balance&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Avoiding Burnout&quot;,
+                &quot;link&quot;: &quot;/freelancing/avoiding-burnout&quot;
+              },
+              {
+                &quot;text&quot;: &quot;The Freedom of Freelancing&quot;,
+                &quot;link&quot;: &quot;/freelancing/the-freedom-of-freelancing&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Traveling as a Freelancer&quot;,
+                &quot;link&quot;: &quot;/freelancing/travelling-as-a-freelancer&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Staying Motivated for the Long Haul&quot;,
+                &quot;link&quot;: &quot;/freelancing/statying-motivated-for-the-long-haul&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Freelancing and Family Life&quot;,
+                &quot;link&quot;: &quot;/freelancing/freelancing-and-family-life&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Summary of Week 6 - Embracing the Lifestyle&quot;,
+                &quot;link&quot;: &quot;/freelancing/embracing-the-lifestyle&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;Challenges and How to Overcome Them&quot;,
+        &quot;collapsible&quot;: true,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;items&quot;: [
+              {
+                &quot;text&quot;: &quot;Dealing with Difficult Clients&quot;,
+                &quot;link&quot;: &quot;/freelancing/dealing-with-difficult-clients&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Managing Financial Uncertainty&quot;,
+                &quot;link&quot;: &quot;/freelancing/managing-financial-uncertainty&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Legal Considerations for Freelancers&quot;,
+                &quot;link&quot;: &quot;/freelancing/legal-consideration-for-freelancers&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Overcoming Freelancing Loneliness&quot;,
+                &quot;link&quot;: &quot;/freelancing/overcoming-freelancing-loneliness&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Handling Rejections and Setbacks&quot;,
+                &quot;link&quot;: &quot;/freelancing/handling-rejections-and-setbacks&quot;
+              },
+              {
+                &quot;text&quot;: &quot;The Importance of Continuous Learning&quot;,
+                &quot;link&quot;: &quot;/freelancing/the-importance-of-continuous-learning&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Building Resilience in Freelancing&quot;,
+                &quot;link&quot;: &quot;/freelancing/building-resilience-in-freelancing&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Summary of Week 7 - Overcoming Challenges&quot;,
+                &quot;link&quot;: &quot;/freelancing/overcoming-challenges&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;Looking Ahead - Future-Proofing Your Career&quot;,
+        &quot;collapsible&quot;: true,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;items&quot;: [
+              {
+                &quot;text&quot;: &quot;Future Trends in Freelancing&quot;,
+                &quot;link&quot;: &quot;/freelancing/future-trends-in-freelancing&quot;
+              },
+              {
+                &quot;text&quot;: &quot;The Importance of Networking&quot;,
+                &quot;link&quot;: &quot;/freelancing/importance-of-networking&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Personal Growth as a Freelancer&quot;,
+                &quot;link&quot;: &quot;/freelancing/personal-growth-as-a-freelancer&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Giving Back - Helping Others in the Freelancing Community&quot;,
+                &quot;link&quot;: &quot;/freelancing/giving-back-helping-others&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Preparing for the Next Level&quot;,
+                &quot;link&quot;: &quot;/freelancing/preparing-for-the-next-level&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Creating a Legacy through Freelancing&quot;,
+                &quot;link&quot;: &quot;/freelancing/creating-a-legacy-through-freelancing&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Reflection - Lessons Learned on My Journey&quot;,
+                &quot;link&quot;: &quot;/freelancing/reflection-lessons-learned&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Encouraging Others to Take the Leap&quot;,
+                &quot;link&quot;: &quot;/freelancing/encourgaing-others-to-take-the-leap&quot;
+              },
+              {
+                &quot;text&quot;: &quot;The Power of Persistence&quot;,
+                &quot;link&quot;: &quot;/freelancing/the-power-of-persistence&quot;
+              },
+              {
+                &quot;text&quot;: &quot;Conclusion and Next Steps&quot;,
+                &quot;link&quot;: &quot;/freelancing/conclustion-and-the-next-step&quot;
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  &quot;socialLinks&quot;: [
+    {
+      &quot;icon&quot;: {
+        &quot;svg&quot;: &quot;&lt;svg xmlns=\&quot;http://www.w3.org/2000/svg\&quot; enable-background=\&quot;new 0 0 24 24\&quot; viewBox=\&quot;0 0 24 24\&quot; id=\&quot;Upwork\&quot;&gt; &lt;path fill=\&quot;#42ff1b\&quot; d=\&quot;M18.561,5.025c-2.539,0-4.51,1.647-5.31,4.362c-1.22-1.832-2.148-4.032-2.687-5.886H7.828v7.105c-0.002,1.404-1.141,2.543-2.547,2.545c-1.406-0.002-2.543-1.142-2.545-2.545V3.5H0v7.105c0,2.911,2.371,5.298,5.282,5.298c2.913,0,5.283-2.387,5.283-5.298V9.416c0.529,1.106,1.182,2.228,1.974,3.219L10.865,20.5h2.797l1.213-5.705c1.063,0.679,2.285,1.109,3.686,1.109c3,0,5.439-2.45,5.439-5.445C24,7.461,21.561,5.025,18.561,5.025L18.561,5.025z M18.561,13.157c-1.102,0-2.135-0.467-3.074-1.227l0.228-1.074l0.008-0.042c0.207-1.143,0.849-3.058,2.839-3.058c1.492,0,2.703,1.211,2.703,2.7C21.264,11.945,20.053,13.157,18.561,13.157L18.561,13.157z\&quot; class=\&quot;color6cd441 svgShape\&quot;&gt;&lt;/path&gt;&lt;path fill=\&quot;#4fb939\&quot; d=\&quot;M12,15.165L10.865,20.5H12V15.165L12,15.165z M10.564,3.5H7.828v7.105c-0.002,1.404-1.141,2.543-2.547,2.545c-1.406-0.002-2.543-1.142-2.545-2.545V3.5H0v7.105c0,2.911,2.371,5.298,5.282,5.298c2.913,0,5.283-2.387,5.283-5.298V9.416c0.404,0.845,0.88,1.699,1.436,2.497V7.194C11.386,5.943,10.9,4.655,10.564,3.5L10.564,3.5z\&quot; class=\&quot;color5eb939 svgShape\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&quot;
+      },
+      &quot;link&quot;: &quot;https://www.upwork.com/freelancers/~017e44b615de910457&quot;
+    },
+    {
+      &quot;icon&quot;: &quot;youtube&quot;,
+      &quot;link&quot;: &quot;https://www.youtube.com/@irahulkewat&quot;
+    },
+    {
+      &quot;icon&quot;: &quot;linkedin&quot;,
+      &quot;link&quot;: &quot;https://www.linkedin.com/in/rahulkewat/&quot;
+    },
+    {
+      &quot;icon&quot;: &quot;github&quot;,
+      &quot;link&quot;: &quot;https://github.com/rahul-kewat&quot;
+    }
+  ],
+  &quot;search&quot;: {
+    &quot;provider&quot;: &quot;local&quot;
+  }
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;services/api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;services/api-examples.md&quot;
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-39a288b8 data-v-e257564d><!--[--><!--]--><!----><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"ai-tools_api-examples.md\":\"BCjV8gno\",\"ai-tools_markdown-examples.md\":\"CDANw8HI\",\"freelancing_art-of-writing-proposals.md\":\"Dmak06R-\",\"freelancing_automatin-tools-to-streamline-your-business.md\":\"CAcizjkg\",\"freelancing_avoiding-burnout.md\":\"BE7MymfW\",\"freelancing_building-a-personal-brand.md\":\"YN-_L_nw\",\"freelancing_building-a-success-routine.md\":\"D5WWE5xb\",\"freelancing_building-a-team-to-expand-your-business.md\":\"KbR5ah5D\",\"freelancing_building-credibility-with-testimonials.md\":\"D_l263-P\",\"freelancing_building-relationship-that-matter.md\":\"D913piMD\",\"freelancing_building-resilience-in-freelancing.md\":\"ElmtMNNK\",\"freelancing_closing-deals-the-followup-strategy.md\":\"CfJyT2kq\",\"freelancing_collaborating-with-other-freelancers.md\":\"CU9ieWF7\",\"freelancing_conclustion-and-the-next-step.md\":\"2mC8cUzT\",\"freelancing_creating-a-legacy-through-freelancing.md\":\"RrFVr-9W\",\"freelancing_creating-a-standout-profile.md\":\"DzDh99ZH\",\"freelancing_creating-a-winning-portfolio.md\":\"DSWtG1re\",\"freelancing_creating-passive-income-through-freelancing.md\":\"BBg42xbt\",\"freelancing_dealing-with-difficult-clients.md\":\"DbMhZ1zj\",\"freelancing_diversifying-your-income-streams.md\":\"DW8v-7hU\",\"freelancing_embracing-the-freelancing-lifestyle.md\":\"BlTDnowS\",\"freelancing_embracing-the-lifestyle.md\":\"BfNeTf4t\",\"freelancing_encourgaing-others-to-take-the-leap.md\":\"DlMkyN6F\",\"freelancing_establishing-your-foundation.md\":\"ByFuPc2m\",\"freelancing_expanding-your-services.md\":\"CMYAA_ZU\",\"freelancing_finding-your-niche.md\":\"CHsgd_dO\",\"freelancing_freelancing-and-family-life.md\":\"CzuiZVJI\",\"freelancing_future-trends-in-freelancing.md\":\"BJCy7j7A\",\"freelancing_get-your-first-freelancing-gig.md\":\"1fZ_JxB8\",\"freelancing_giving-back-helping-others.md\":\"BqxplEtX\",\"freelancing_handling-rejections-and-setbacks.md\":\"D5O2mGyM\",\"freelancing_how-top-3-percent-making-it.md\":\"ByXVHGql\",\"freelancing_importance-of-networking.md\":\"DqTl1Uum\",\"freelancing_index.md\":\"CmDqFJ1h\",\"freelancing_laying-the-foundation.md\":\"CkWxNjOB\",\"freelancing_legal-consideration-for-freelancers.md\":\"CucGRJwE\",\"freelancing_leveraging-social-proof.md\":\"EJlMipkG\",\"freelancing_long-term-growth-startegies.md\":\"DqVxN71o\",\"freelancing_maintaining-work-life-balance.md\":\"CX4jWKWV\",\"freelancing_managing-financial-uncertainty.md\":\"aUwRmMVt\",\"freelancing_managing-multiple-clients.md\":\"BZ2mI0Vs\",\"freelancing_moving-from-freelancing-consulting.md\":\"DHjlzG8j\",\"freelancing_my-freelancing-journey.md\":\"BiUMAU_7\",\"freelancing_overcoming-challenges.md\":\"DnfNsQQe\",\"freelancing_overcoming-freelancing-loneliness.md\":\"1VEi6zwH\",\"freelancing_overcoming-no-experience-objection.md\":\"DMof79Jp\",\"freelancing_overcoming-self-doubt.md\":\"DJl3VYUo\",\"freelancing_personal-growth-as-a-freelancer.md\":\"DsIhBkN0\",\"freelancing_positioning-yourself-as-an-expert.md\":\"CJlmqeqw\",\"freelancing_preparing-for-the-next-level.md\":\"DUlMgqio\",\"freelancing_pricing-your-services-right.md\":\"CmmG9BVB\",\"freelancing_reflection-lessons-learned.md\":\"-VzuQNLy\",\"freelancing_rewarding-career-path.md\":\"cI8tFIVt\",\"freelancing_scailing-your-freelancing-income.md\":\"DhEgvAce\",\"freelancing_scaling-up.md\":\"B-NFu9R7\",\"freelancing_securing-your-first-clients.md\":\"DE_TJm11\",\"freelancing_setting-goals.md\":\"CTzFGp1w\",\"freelancing_statying-motivated-for-the-long-haul.md\":\"CzVfYqed\",\"freelancing_the-freedom-of-freelancing.md\":\"ChuEYc-6\",\"freelancing_the-importance-of-client-retention.md\":\"uHRkYQq5\",\"freelancing_the-importance-of-continuous-learning.md\":\"Dbp8rd-i\",\"freelancing_the-mindset-shift.md\":\"C85zfl6m\",\"freelancing_the-power-of-persistence.md\":\"DNhYbno1\",\"freelancing_travelling-as-a-freelancer.md\":\"D-YFV8xl\",\"freelancing_what-is-freelancing.md\":\"DnvyHlBn\",\"freelancing_where-to-find-high-quality-clients.md\":\"CJQ9I8zG\",\"index.md\":\"DzO3Xim-\",\"services_api-examples.md\":\"IEykUXSE\",\"services_markdown-examples.md\":\"BYj3uZxA\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"Rahul Kewat\",\"description\":\"Learn How I made $100k in just a few years\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"logo\":\"/rahulkewat_logo.png\",\"nav\":[{\"text\":\"Home\",\"link\":\"/\"},{\"text\":\"Freelancing\",\"link\":\"/freelancing/\"}],\"sidebar\":{\"/freelancing/\":[{\"items\":[{\"text\":\"What is freelancing\",\"link\":\"/freelancing/what-is-freelancing\"},{\"text\":\"How top 3% are making it\",\"link\":\"/freelancing/how-top-3-percent-making-it\"},{\"text\":\"Rewarding career path\",\"link\":\"/freelancing/rewarding-career-path\"}]},{\"text\":\"Introduction & Mindset\",\"collapsible\":true,\"collapsed\":true,\"items\":[{\"items\":[{\"text\":\"My Freelancing Journey - From $0 to $100k\",\"link\":\"/freelancing/my-freelancing-journey\"},{\"text\":\"The Mindset Shift - Thinking Like an Entrepreneur\",\"link\":\"/freelancing/the-mindset-shift\"},{\"text\":\"Setting Goals - The Roadmap to Success\",\"link\":\"/freelancing/setting-goals\"},{\"text\":\"Overcoming Self-Doubt - Your Biggest Barrier\",\"link\":\"/freelancing/overcoming-self-doubt\"},{\"text\":\"Building a Success Routine\",\"link\":\"/freelancing/building-a-success-routine\"},{\"text\":\"Embracing the Freelancing Lifestyle\",\"link\":\"/freelancing/embracing-the-freelancing-lifestyle\"},{\"text\":\"Summary of Week 1 - Laying the Foundation\",\"link\":\"/freelancing/laying-the-foundation\"}]}]},{\"text\":\"Setting Up for Success\",\"collapsible\":true,\"collapsed\":true,\"items\":[{\"items\":[{\"text\":\"Finding Your Niche - Why It Matters\",\"link\":\"/freelancing/finding-your-niche\"},{\"text\":\"Creating a Standout Profile - Your First Impression\",\"link\":\"/freelancing/creating-a-standout-profile\"},{\"text\":\"Crafting a Winning Portfolio\",\"link\":\"/freelancing/creating-a-winning-portfolio\"},{\"text\":\"The Art of Writing Proposals\",\"link\":\"/freelancing/art-of-writing-proposals\"},{\"text\":\"Pricing Your Services Right\",\"link\":\"/freelancing/pricing-your-services-right\"},{\"text\":\"Building Credibility with Testimonials\",\"link\":\"/freelancing/building-credibility-with-testimonials\"},{\"text\":\"Summary of Week 2 - Establishing Your Foundation\",\"link\":\"/freelancing/establishing-your-foundation\"}]}]},{\"text\":\"Getting Your First Clients\",\"collapsible\":true,\"collapsed\":true,\"items\":[{\"items\":[{\"text\":\"Where to Find High-Quality Clients\",\"link\":\"/freelancing/where-to-find-high-quality-clients\"},{\"text\":\"Networking Online - Building Relationships That Matter\",\"link\":\"/freelancing/building-relationship-that-matter\"},{\"text\":\"How to Get Your First Freelancing Gig\",\"link\":\"/freelancing/get-your-first-freelancing-gig\"},{\"text\":\"Leveraging Social Proof\",\"link\":\"/freelancing/leveraging-social-proof\"},{\"text\":\"Overcoming the “No Experience” Objection\",\"link\":\"/freelancing/overcoming-no-experience-objection\"},{\"text\":\"Closing Deals - The Follow-Up Strategy\",\"link\":\"/freelancing/closing-deals-the-followup-strategy\"},{\"text\":\"Summary of Week 3 - Securing Your First Clients\",\"link\":\"/freelancing/securing-your-first-clients\"}]}]},{\"text\":\"Scaling Your Freelancing Business\",\"collapsible\":true,\"collapsed\":true,\"items\":[{\"items\":[{\"text\":\"Scaling Your Freelancing Income\",\"link\":\"/freelancing/scailing-your-freelancing-income\"},{\"text\":\"Expanding Your Services\",\"link\":\"/freelancing/expanding-your-services\"},{\"text\":\"Managing Multiple Clients\",\"link\":\"/freelancing/managing-multiple-clients\"},{\"text\":\"Building a Personal Brand\",\"link\":\"/freelancing/building-a-personal-brand\"},{\"text\":\"Automation Tools to Streamline Your Business\",\"link\":\"/freelancing/automatin-tools-to-streamline-your-business\"},{\"text\":\"The Importance of Client Retention\",\"link\":\"/freelancing/the-importance-of-client-retention\"},{\"text\":\"Summary of Week 4 - Scaling Up\",\"link\":\"/freelancing/scaling-up\"}]}]},{\"text\":\"Advanced Strategies and Long-Term Growth\",\"collapsible\":true,\"collapsed\":true,\"items\":[{\"items\":[{\"text\":\"Diversifying Your Income Streams\",\"link\":\"/freelancing/diversifying-your-income-streams\"},{\"text\":\"Moving from Freelancing to Consulting\",\"link\":\"/freelancing/moving-from-freelancing-consulting\"},{\"text\":\"Creating Passive Income through Freelancing\",\"link\":\"/freelancing/creating-passive-income-through-freelancing\"},{\"text\":\"Building a Team to Expand Your Business\",\"link\":\"/freelancing/building-a-team-to-expand-your-business\"},{\"text\":\"Positioning Yourself as an Expert\",\"link\":\"/freelancing/positioning-yourself-as-an-expert\"},{\"text\":\"Collaborating with Other Freelancers\",\"link\":\"/freelancing/collaborating-with-other-freelancers\"},{\"text\":\"Summary of Week 5 - Long-Term Growth Strategies\",\"link\":\"/freelancing/long-term-growth-startegies\"}]}]},{\"text\":\"The Freelancing Lifestyle\",\"collapsible\":true,\"collapsed\":true,\"items\":[{\"items\":[{\"text\":\"Maintaining Work-Life Balance\",\"link\":\"/freelancing/maintaining-work-life-balance\"},{\"text\":\"Avoiding Burnout\",\"link\":\"/freelancing/avoiding-burnout\"},{\"text\":\"The Freedom of Freelancing\",\"link\":\"/freelancing/the-freedom-of-freelancing\"},{\"text\":\"Traveling as a Freelancer\",\"link\":\"/freelancing/travelling-as-a-freelancer\"},{\"text\":\"Staying Motivated for the Long Haul\",\"link\":\"/freelancing/statying-motivated-for-the-long-haul\"},{\"text\":\"Freelancing and Family Life\",\"link\":\"/freelancing/freelancing-and-family-life\"},{\"text\":\"Summary of Week 6 - Embracing the Lifestyle\",\"link\":\"/freelancing/embracing-the-lifestyle\"}]}]},{\"text\":\"Challenges and How to Overcome Them\",\"collapsible\":true,\"collapsed\":true,\"items\":[{\"items\":[{\"text\":\"Dealing with Difficult Clients\",\"link\":\"/freelancing/dealing-with-difficult-clients\"},{\"text\":\"Managing Financial Uncertainty\",\"link\":\"/freelancing/managing-financial-uncertainty\"},{\"text\":\"Legal Considerations for Freelancers\",\"link\":\"/freelancing/legal-consideration-for-freelancers\"},{\"text\":\"Overcoming Freelancing Loneliness\",\"link\":\"/freelancing/overcoming-freelancing-loneliness\"},{\"text\":\"Handling Rejections and Setbacks\",\"link\":\"/freelancing/handling-rejections-and-setbacks\"},{\"text\":\"The Importance of Continuous Learning\",\"link\":\"/freelancing/the-importance-of-continuous-learning\"},{\"text\":\"Building Resilience in Freelancing\",\"link\":\"/freelancing/building-resilience-in-freelancing\"},{\"text\":\"Summary of Week 7 - Overcoming Challenges\",\"link\":\"/freelancing/overcoming-challenges\"}]}]},{\"text\":\"Looking Ahead - Future-Proofing Your Career\",\"collapsible\":true,\"collapsed\":true,\"items\":[{\"items\":[{\"text\":\"Future Trends in Freelancing\",\"link\":\"/freelancing/future-trends-in-freelancing\"},{\"text\":\"The Importance of Networking\",\"link\":\"/freelancing/importance-of-networking\"},{\"text\":\"Personal Growth as a Freelancer\",\"link\":\"/freelancing/personal-growth-as-a-freelancer\"},{\"text\":\"Giving Back - Helping Others in the Freelancing Community\",\"link\":\"/freelancing/giving-back-helping-others\"},{\"text\":\"Preparing for the Next Level\",\"link\":\"/freelancing/preparing-for-the-next-level\"},{\"text\":\"Creating a Legacy through Freelancing\",\"link\":\"/freelancing/creating-a-legacy-through-freelancing\"},{\"text\":\"Reflection - Lessons Learned on My Journey\",\"link\":\"/freelancing/reflection-lessons-learned\"},{\"text\":\"Encouraging Others to Take the Leap\",\"link\":\"/freelancing/encourgaing-others-to-take-the-leap\"},{\"text\":\"The Power of Persistence\",\"link\":\"/freelancing/the-power-of-persistence\"},{\"text\":\"Conclusion and Next Steps\",\"link\":\"/freelancing/conclustion-and-the-next-step\"}]}]}]},\"socialLinks\":[{\"icon\":{\"svg\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" enable-background=\\\"new 0 0 24 24\\\" viewBox=\\\"0 0 24 24\\\" id=\\\"Upwork\\\"> <path fill=\\\"#42ff1b\\\" d=\\\"M18.561,5.025c-2.539,0-4.51,1.647-5.31,4.362c-1.22-1.832-2.148-4.032-2.687-5.886H7.828v7.105c-0.002,1.404-1.141,2.543-2.547,2.545c-1.406-0.002-2.543-1.142-2.545-2.545V3.5H0v7.105c0,2.911,2.371,5.298,5.282,5.298c2.913,0,5.283-2.387,5.283-5.298V9.416c0.529,1.106,1.182,2.228,1.974,3.219L10.865,20.5h2.797l1.213-5.705c1.063,0.679,2.285,1.109,3.686,1.109c3,0,5.439-2.45,5.439-5.445C24,7.461,21.561,5.025,18.561,5.025L18.561,5.025z M18.561,13.157c-1.102,0-2.135-0.467-3.074-1.227l0.228-1.074l0.008-0.042c0.207-1.143,0.849-3.058,2.839-3.058c1.492,0,2.703,1.211,2.703,2.7C21.264,11.945,20.053,13.157,18.561,13.157L18.561,13.157z\\\" class=\\\"color6cd441 svgShape\\\"></path><path fill=\\\"#4fb939\\\" d=\\\"M12,15.165L10.865,20.5H12V15.165L12,15.165z M10.564,3.5H7.828v7.105c-0.002,1.404-1.141,2.543-2.547,2.545c-1.406-0.002-2.543-1.142-2.545-2.545V3.5H0v7.105c0,2.911,2.371,5.298,5.282,5.298c2.913,0,5.283-2.387,5.283-5.298V9.416c0.404,0.845,0.88,1.699,1.436,2.497V7.194C11.386,5.943,10.9,4.655,10.564,3.5L10.564,3.5z\\\" class=\\\"color5eb939 svgShape\\\"></path></svg>\"},\"link\":\"https://www.upwork.com/freelancers/~017e44b615de910457\"},{\"icon\":\"youtube\",\"link\":\"https://www.youtube.com/@irahulkewat\"},{\"icon\":\"linkedin\",\"link\":\"https://www.linkedin.com/in/rahulkewat/\"},{\"icon\":\"github\",\"link\":\"https://github.com/rahul-kewat\"}],\"search\":{\"provider\":\"local\"}},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>

@@ -36,9 +36,9 @@ export default defineConfig({
         {
           // text: 'Examples',
           items: generateSidebarItems('/freelancing/', [
-            { text: 'What is freelancing', link: '/markdown-examples' },
-            { text: 'How to 3% are making it', link: '/api-examples' },
-            { text: 'Demanding an rewarding career path', link: '/api-examples' },
+            { text: 'What is freelancing', link: '/what-is-freelancing' },
+            { text: 'How top 3% are making it', link: '/how-top-3-percent-making-it' },
+            { text: 'Rewarding career path', link: '/rewarding-career-path' },
           ])
         },
         {
@@ -50,13 +50,13 @@ export default defineConfig({
               // Title for the section.
               // text: 'Section A Title',
               items: [
-                { text: 'My Freelancing Journey - From $0 to $100k', link: '...' },
-                { text: 'The Mindset Shift - Thinking Like an Entrepreneur', link: '...' },
-                { text: 'Setting Goals - The Roadmap to Success', link: '...' },
-                { text: 'Overcoming Self-Doubt - Your Biggest Barrier', link: '...' },
-                { text: 'Building a Success Routine', link: '...' },
-                { text: 'Embracing the Freelancing Lifestyle', link: '...' },
-                { text: 'Summary of Week 1 - Laying the Foundation', link: '...' }
+                { text: 'My Freelancing Journey - From $0 to $100k', link: 'my-freelancing-journey' },
+                { text: 'The Mindset Shift - Thinking Like an Entrepreneur', link: 'the-mindset-shift' },
+                { text: 'Setting Goals - The Roadmap to Success', link: 'setting-goals' },
+                { text: 'Overcoming Self-Doubt - Your Biggest Barrier', link: 'overcoming-self-doubt' },
+                { text: 'Building a Success Routine', link: 'building-a-success-routine' },
+                { text: 'Embracing the Freelancing Lifestyle', link: 'embracing-the-freelancing-lifestyle' },
+                { text: 'Summary of Week 1 - Laying the Foundation', link: 'laying-the-foundation' }
               ]
             }
           ]),
@@ -70,13 +70,13 @@ export default defineConfig({
               // Title for the section.
               // text: 'Section A Title',
               items: [
-                { text: 'Finding Your Niche - Why It Matters', link: '...' },
-                { text: 'Creating a Standout Profile - Your First Impression', link: '...' },
-                { text: 'Crafting a Winning Portfolio', link: '...' },
-                { text: 'The Art of Writing Proposals', link: '...' },
-                { text: 'Pricing Your Services Right', link: '...' },
-                { text: 'Building Credibility with Testimonials', link: '...' },
-                { text: 'Summary of Week 2 - Establishing Your Foundation', link: '...' }
+                { text: 'Finding Your Niche - Why It Matters', link: 'finding-your-niche' },
+                { text: 'Creating a Standout Profile - Your First Impression', link: 'creating-a-standout-profile' },
+                { text: 'Crafting a Winning Portfolio', link: 'creating-a-winning-portfolio' },
+                { text: 'The Art of Writing Proposals', link: 'art-of-writing-proposals' },
+                { text: 'Pricing Your Services Right', link: 'pricing-your-services-right' },
+                { text: 'Building Credibility with Testimonials', link: 'building-credibility-with-testimonials' },
+                { text: 'Summary of Week 2 - Establishing Your Foundation', link: 'establishing-your-foundation' }
               ]
             }
           ])
@@ -90,13 +90,13 @@ export default defineConfig({
               // Title for the section.
               // text: 'Section A Title',
               items: [
-                { text: 'Where to Find High-Quality Clients', link: '...' },
-                { text: 'Networking Online - Building Relationships That Matter', link: '...' },
-                { text: 'How to Get Your First Freelancing Gig', link: '...' },
-                { text: 'Leveraging Social Proof', link: '...' },
-                { text: 'Overcoming the “No Experience” Objection', link: '...' },
-                { text: 'Closing Deals - The Follow-Up Strategy', link: '...' },
-                { text: 'Summary of Week 3 - Securing Your First Clients', link: '...' }
+                { text: 'Where to Find High-Quality Clients', link: 'where-to-find-high-quality-clients' },
+                { text: 'Networking Online - Building Relationships That Matter', link: 'building-relationship-that-matter' },
+                { text: 'How to Get Your First Freelancing Gig', link: 'get-your-first-freelancing-gig' },
+                { text: 'Leveraging Social Proof', link: 'leveraging-social-proof' },
+                { text: 'Overcoming the “No Experience” Objection', link: 'overcoming-no-experience-objection' },
+                { text: 'Closing Deals - The Follow-Up Strategy', link: 'closing-deals-the-followup-strategy' },
+                { text: 'Summary of Week 3 - Securing Your First Clients', link: 'securing-your-first-clients' }
               ]
             }
           ])
@@ -110,13 +110,13 @@ export default defineConfig({
               // Title for the section.
               // text: 'Section A Title',
               items: [
-                { text: 'Scaling Your Freelancing Income', link: '...' },
-                { text: 'Expanding Your Services', link: '...' },
-                { text: 'Managing Multiple Clients', link: '...' },
-                { text: 'Building a Personal Brand', link: '...' },
-                { text: 'Automation Tools to Streamline Your Business', link: '...' },
-                { text: 'The Importance of Client Retention', link: '...' },
-                { text: 'Summary of Week 4 - Scaling Up', link: '...' }
+                { text: 'Scaling Your Freelancing Income', link: 'scailing-your-freelancing-income' },
+                { text: 'Expanding Your Services', link: 'expanding-your-services' },
+                { text: 'Managing Multiple Clients', link: 'managing-multiple-clients' },
+                { text: 'Building a Personal Brand', link: 'building-a-personal-brand' },
+                { text: 'Automation Tools to Streamline Your Business', link: 'automatin-tools-to-streamline-your-business' },
+                { text: 'The Importance of Client Retention', link: 'the-importance-of-client-retention' },
+                { text: 'Summary of Week 4 - Scaling Up', link: 'scaling-up' }
               ]
             }
           ])
@@ -130,13 +130,13 @@ export default defineConfig({
               // Title for the section.
               // text: 'Section A Title',
               items: [
-                { text: 'Diversifying Your Income Streams', link: '...' },
-                { text: 'Moving from Freelancing to Consulting', link: '...' },
-                { text: 'Creating Passive Income through Freelancing', link: '...' },
-                { text: 'Building a Team to Expand Your Business', link: '...' },
-                { text: 'Positioning Yourself as an Expert', link: '...' },
-                { text: 'Collaborating with Other Freelancers', link: '...' },
-                { text: 'Summary of Week 5 - Long-Term Growth Strategies', link: '...' }
+                { text: 'Diversifying Your Income Streams', link: 'diversifying-your-income-streams' },
+                { text: 'Moving from Freelancing to Consulting', link: 'moving-from-freelancing-consulting' },
+                { text: 'Creating Passive Income through Freelancing', link: 'creating-passive-income-through-freelancing' },
+                { text: 'Building a Team to Expand Your Business', link: 'building-a-team-to-expand-your-business' },
+                { text: 'Positioning Yourself as an Expert', link: 'positioning-yourself-as-an-expert' },
+                { text: 'Collaborating with Other Freelancers', link: 'collaborating-with-other-freelancers' },
+                { text: 'Summary of Week 5 - Long-Term Growth Strategies', link: 'long-term-growth-startegies' }
               ]
             }
           ])
@@ -150,13 +150,13 @@ export default defineConfig({
               // Title for the section.
               // text: 'Section A Title',
               items: [
-                { text: 'Maintaining Work-Life Balance', link: '...' },
-                { text: 'Avoiding Burnout', link: '...' },
-                { text: 'The Freedom of Freelancing', link: '...' },
-                { text: 'Traveling as a Freelancer', link: '...' },
-                { text: 'Staying Motivated for the Long Haul', link: '...' },
-                { text: 'Freelancing and Family Life', link: '...' },
-                { text: 'Summary of Week 6 - Embracing the Lifestyle', link: '...' }
+                { text: 'Maintaining Work-Life Balance', link: 'maintaining-work-life-balance' },
+                { text: 'Avoiding Burnout', link: 'avoiding-burnout' },
+                { text: 'The Freedom of Freelancing', link: 'the-freedom-of-freelancing' },
+                { text: 'Traveling as a Freelancer', link: 'travelling-as-a-freelancer' },
+                { text: 'Staying Motivated for the Long Haul', link: 'statying-motivated-for-the-long-haul' },
+                { text: 'Freelancing and Family Life', link: 'freelancing-and-family-life' },
+                { text: 'Summary of Week 6 - Embracing the Lifestyle', link: 'embracing-the-lifestyle' }
               ]
             }
           ])
@@ -170,14 +170,14 @@ export default defineConfig({
               // Title for the section.
               // text: 'Section A Title',
               items: [
-                { text: 'Dealing with Difficult Clients', link: '...' },
-                { text: 'Managing Financial Uncertainty', link: '...' },
-                { text: 'Legal Considerations for Freelancers', link: '...' },
-                { text: 'Overcoming Freelancing Loneliness', link: '...' },
-                { text: 'Handling Rejections and Setbacks', link: '...' },
-                { text: 'The Importance of Continuous Learning', link: '...' },
-                { text: 'Building Resilience in Freelancing', link: '...' },
-                { text: 'Summary of Week 7 - Overcoming Challenges', link: '...' }
+                { text: 'Dealing with Difficult Clients', link: 'dealing-with-difficult-clients' },
+                { text: 'Managing Financial Uncertainty', link: 'managing-financial-uncertainty' },
+                { text: 'Legal Considerations for Freelancers', link: 'legal-consideration-for-freelancers' },
+                { text: 'Overcoming Freelancing Loneliness', link: 'overcoming-freelancing-loneliness' },
+                { text: 'Handling Rejections and Setbacks', link: 'handling-rejections-and-setbacks' },
+                { text: 'The Importance of Continuous Learning', link: 'the-importance-of-continuous-learning' },
+                { text: 'Building Resilience in Freelancing', link: 'building-resilience-in-freelancing' },
+                { text: 'Summary of Week 7 - Overcoming Challenges', link: 'overcoming-challenges' }
               ]
             }
           ])
@@ -191,16 +191,16 @@ export default defineConfig({
               // Title for the section.
               // text: 'Section A Title',
               items: [
-                { text: 'Future Trends in Freelancing', link: '...' },
-                { text: 'The Importance of Networking', link: '...' },
-                { text: 'Personal Growth as a Freelancer', link: '...' },
-                { text: 'Giving Back - Helping Others in the Freelancing Community', link: '...' },
-                { text: 'Preparing for the Next Level', link: '...' },
-                { text: 'Creating a Legacy through Freelancing', link: '...' },
-                { text: 'Reflection - Lessons Learned on My Journey', link: '...' },
-                { text: 'Encouraging Others to Take the Leap', link: '...' },
-                { text: 'The Power of Persistence', link: '...' },
-                { text: 'Conclusion and Next Steps', link: '...' }
+                { text: 'Future Trends in Freelancing', link: 'future-trends-in-freelancing' },
+                { text: 'The Importance of Networking', link: 'importance-of-networking' },
+                { text: 'Personal Growth as a Freelancer', link: 'personal-growth-as-a-freelancer' },
+                { text: 'Giving Back - Helping Others in the Freelancing Community', link: 'giving-back-helping-others' },
+                { text: 'Preparing for the Next Level', link: 'preparing-for-the-next-level' },
+                { text: 'Creating a Legacy through Freelancing', link: 'creating-a-legacy-through-freelancing' },
+                { text: 'Reflection - Lessons Learned on My Journey', link: 'reflection-lessons-learned' },
+                { text: 'Encouraging Others to Take the Leap', link: 'encourgaing-others-to-take-the-leap' },
+                { text: 'The Power of Persistence', link: 'the-power-of-persistence' },
+                { text: 'Conclusion and Next Steps', link: 'conclustion-and-the-next-step' }
               ]
             }
           ])
@@ -238,7 +238,10 @@ export default defineConfig({
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/rahulkewat/' },
       // Github
       { icon: 'github', link: 'https://github.com/rahul-kewat' }
-    ]
+    ],
+    search: {
+      provider: 'local'
+    }
   },
   vite: {
     css: {
