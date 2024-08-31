@@ -8,10 +8,10 @@ hero:
   name: Rahul Kewat
   text: Unlock Your $100k Freelancing Potential
   textStyle: "font-size: 1px; line-height: 1.2;"  # Custom inline styles
-  tagline: Markdown to Beautiful Docs in Minutes
+  tagline: Get Expert Guidance that you need
   actions:
     - theme: brand
-      text: What is VitePress?
+      text: Get a Expert Advice
       link: /guide/what-is-vitepress
     - theme: alt
       text: Quickstart
@@ -20,7 +20,7 @@ hero:
       text: GitHub
       link: https://github.com/vuejs/vitepress
   image:
-    src: /20240829_122321.png
+    src: /rahul_kewat.png
     alt: VitePress
     style: "max-width: 100%; height: auto;"  
 
