@@ -23,6 +23,16 @@ function generateSidebarItems(base: string, items: Array<any>): Array<any> {
 export default defineConfig({
   title: "Rahul Kewat",
   description: "Learn How I made $100k in just a few years",
+  head: [
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1527757373409987',
+        crossorigin: 'anonymous',
+      },
+    ],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/rahulkewat_logo.png',
