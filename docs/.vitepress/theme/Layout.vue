@@ -3,7 +3,7 @@
   <div>
     <DefaultTheme.Layout>
       <!-- Custom sidebar content inserted in the aside-outline-after slot -->
-      <template #aside-outline-after>
+      <template #aside-bottom>
         <div class="main-content">
           <!-- Google Ad Component -->
           <GoogleAd />
