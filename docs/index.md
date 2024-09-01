@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get an Expert Advice
-      link: /guide/what-is-vitepress
+      link: https://topmate.io/rahulkewat/1185547
     - theme: alt
       text: Quickstart
       link: /freelancing/
