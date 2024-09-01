@@ -1,1 +1,7 @@
 /*  */
+.clickable-box-grid{
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line */
+    gap: 16px; /* Space between the boxes */
+    margin-top: 20px;
+}

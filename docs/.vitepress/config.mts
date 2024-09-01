@@ -28,7 +28,7 @@ export default defineConfig({
     logo: '/rahulkewat_logo.png',
     nav: [
       { text: 'Home', link: '/' },
-      // { text: 'AI Tools', link: '/ai-tools/' },
+      { text: 'Best Tools', link: '/best-tools/' },
       { text: 'Freelancing', link: '/freelancing/' }
     ],
     sidebar: {
@@ -206,28 +206,44 @@ export default defineConfig({
           ])
         },
       ],
-      // 'tools': [
-      //   {
-      //     text: 'AI Tools',s
-      //     collapsible: true,
-      //     collapsed: false,
-      //     items: generateSidebarItems('/tools/',[
-      //       { text: 'Tool 1', link: '/ai-tools/tool1' },
-      //       { text: 'Tool 2', link: '/ai-tools/tool2' }
-      //     ])
-      //   }
-      // ],
-      // '/services/': [
-      //   {
-      //     text: 'Services',
-      //     collapsible: true,
-      //     collapsed: false,
-      //     items: generateSidebarItems('/services/',[
-      //       { text: 'Consulting', link: '/services/consulting' },
-      //       { text: 'Workshops', link: '/services/workshops' }
-      //     ])
-      //   }
-      // ]
+      '/best-tools/': [
+        {
+          // text: 'Best Tools',
+          items: generateSidebarItems('/best-tools/', [
+            { text: 'Project Management', link: 'project-management' },
+            { text: 'Time Tracking', link: 'time-tracking' },
+            { text: 'Invoicing & Payments', link: 'invoicing-payments' },
+            { text: 'Design Tools', link: 'design-tools' },
+            { text: 'Communication & Collaboration', link: 'communication-collaboration' },
+            { text: 'File Sharing & Storage', link: 'file-sharing-storage' },
+            { text: 'Content Creation & Writing', link: 'content-creation-writing' },
+            { text: 'Coding & Development', link: 'coding-development' },
+            { text: 'Marketing & SEO', link: 'marketing-seo' },
+            { text: 'Social Media Management', link: 'social-media-management' },
+            { text: 'Customer Relationship Management (CRM)', link: 'crm-tools' },
+            { text: 'Freelance Platforms', link: 'freelance-platforms' },
+            { text: 'File Compression & Conversion', link: 'file-compression-conversion' },
+            { text: 'Prototyping & Wireframing', link: 'prototyping-wireframing' },
+            { text: 'Virtual Private Network (VPN)', link: 'vpns-tools' },
+            { text: 'Graphic Design Marketplaces', link: 'graphic-design-marketplaces' },
+            { text: 'Learning & Skill Development', link: 'learning-skill-development' },
+            { text: 'Email Marketing', link: 'email-marketing' },
+            { text: 'Website Building', link: 'website-building' },
+            { text: 'Legal & Contracts', link: 'legal-contracts' }
+          ])
+        }
+      ],
+      '/services/': [
+        {
+          text: 'Services',
+          collapsible: true,
+          collapsed: false,
+          items: generateSidebarItems('/services/',[
+            { text: 'Consulting', link: '/services/consulting' },
+            { text: 'Workshops', link: '/services/workshops' }
+          ])
+        }
+      ]
     },
     socialLinks: [
       // Upwork
