@@ -24,6 +24,7 @@ export default defineConfig({
   title: "Rahul Kewat",
   description: "Learn How I made $100k in just a few years",
   head: [
+    // Add Google AdSense script in the head section
     [
       'script',
       {
@@ -31,6 +32,26 @@ export default defineConfig({
         src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1527757373409987',
         crossorigin: 'anonymous',
       },
+    ],
+    // Add Google Analytics script in the head section
+    [
+      'script',
+      {
+        async: true,
+        src: `https://www.googletagmanager.com/gtag/js?id=G-LGGSEDKHHR`, // Replace with your Measurement ID
+      },
+    ],
+    [
+      'script',
+      {},
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGGSEDKHHR', { 
+        page_path: window.location.pathname,
+      });
+      `,
     ],
   ],
   themeConfig: {
