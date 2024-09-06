@@ -24,6 +24,7 @@ export default defineConfig({
   title: "Rahul Kewat",
   description: "Learn How I made $100k in just a few years",
   head: [
+    ['link', { rel: 'icon', href: './favicon.ico' }],
     // Add Google AdSense script in the head section
     [
       'script',
