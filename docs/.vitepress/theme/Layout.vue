@@ -21,7 +21,7 @@ import GoogleAd from './components/GoogleAd.vue'; // Import the GoogleAd compone
 <style scoped>
 .main-content {
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 0px solid #eee;
   border-radius: 8px;
   margin-top: 1rem;
 }

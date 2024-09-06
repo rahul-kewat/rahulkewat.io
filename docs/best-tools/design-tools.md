@@ -1,6 +1,6 @@
-# Time Tracking Tools
+# Design Tools
 
-Here are some of the best Time Tracking tools for freelancers:
+Here are some of the best Design tools for freelancers:
 
 
 <div class="clickable-box-grid">

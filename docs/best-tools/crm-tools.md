@@ -1,6 +1,6 @@
-# Time Tracking Tools
+# CRM Tools
 
-Here are some of the best Time Tracking tools for freelancers:
+Here are some of the best CRM tools for freelancers:
 
 
 <div class="clickable-box-grid">

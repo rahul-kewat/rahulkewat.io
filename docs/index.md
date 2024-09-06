@@ -16,9 +16,6 @@ hero:
     - theme: alt
       text: Quickstart
       link: /freelancing/
-    # - theme: alt
-    #   text: GitHub
-    #   link: https://github.com/vuejs/vitepress
   image:
     src: /rahul_kewat.png
     alt: VitePress
@@ -46,9 +43,14 @@ features:
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(44px);
+}
+
+.VPContent:has(> .VPHome) {
+  background: radial-gradient(circle, rgba(255, 110, 199, 0.20), rgba(167, 107, 255, 0.20), rgba(96, 217, 244, 0.20));
+  min-height: 100vh;
+  margin: 0;
 }
 
 @media (min-width: 640px) {

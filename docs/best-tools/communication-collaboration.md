@@ -1,6 +1,6 @@
-# Time Tracking Tools
+#  Communication and Collaboration Tools
 
-Here are some of the best Time Tracking tools for freelancers:
+Here are some of the best Communication and Collaboration tools for freelancers:
 
 
 <div class="clickable-box-grid">

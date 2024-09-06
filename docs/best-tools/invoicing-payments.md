@@ -1,6 +1,6 @@
-# Time Tracking Tools
+# Invoicing Payments Tools
 
-Here are some of the best Time Tracking tools for freelancers:
+Here are some of the best Invoicing Payments tools for freelancers:
 
 
 <div class="clickable-box-grid">

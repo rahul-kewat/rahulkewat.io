@@ -1,6 +1,6 @@
-# Time Tracking Tools
+# Content Creation Tools
 
-Here are some of the best Time Tracking tools for freelancers:
+Here are some of the best Content Creation Writing tools for freelancers:
 
 
 <div class="clickable-box-grid">
