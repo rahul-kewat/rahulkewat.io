@@ -53,6 +53,23 @@
             <span>in the trenches</span>
           </div>
         </div>
+
+        <div class="rk-hero__socials" aria-label="Find Rahul on">
+          <span class="rk-hero__socials-label">Find me on</span>
+          <span class="rk-hero__socials-line" aria-hidden="true"></span>
+          <a
+            v-for="s in socials"
+            :key="s.label"
+            :href="s.href"
+            :aria-label="s.label"
+            target="_blank"
+            rel="noopener"
+            class="rk-hero__social"
+          >
+            <span class="rk-hero__social-icon" v-html="s.icon"></span>
+            <span class="rk-hero__social-name">{{ s.label }}</span>
+          </a>
+        </div>
       </div>
 
       <div class="rk-hero__visual rk-reveal" data-delay="150">
@@ -89,6 +106,29 @@ const words = [
 const longest = computed(() =>
   words.reduce((a, b) => (b.length > a.length ? b : a), '')
 );
+
+const socials = [
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/rahulkewat/',
+    icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
+  },
+  {
+    label: 'GitHub',
+    href: 'https://github.com/rahul-kewat',
+    icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>',
+  },
+  {
+    label: 'YouTube',
+    href: 'https://www.youtube.com/@iamrahulkewat',
+    icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>',
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/rahulkewat_/',
+    icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>',
+  },
+];
 
 const currentWord = ref('');
 let timer = null;
@@ -164,16 +204,14 @@ onBeforeUnmount(() => {
 .rk-hero__pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.9rem;
+  gap: 0.55rem;
+  padding: 0.4rem 0.95rem;
   font-size: 0.78rem;
   font-weight: 500;
   color: var(--vp-c-text-2);
   border: 1px solid var(--rk-border);
   border-radius: 999px;
-  background: var(--rk-glass-bg);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: transparent;
   margin-bottom: 1.5rem;
 }
 
@@ -357,6 +395,97 @@ onBeforeUnmount(() => {
   width: 1px;
   height: 28px;
   background: var(--rk-border);
+}
+
+/* ─── Social row ─── */
+.rk-hero__socials {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .rk-hero__socials { justify-content: center; }
+}
+
+.rk-hero__socials-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-3);
+}
+
+.rk-hero__socials-line {
+  flex: 0 0 32px;
+  height: 1px;
+  background: var(--rk-border);
+}
+
+@media (max-width: 900px) {
+  .rk-hero__socials-line { display: none; }
+}
+
+.rk-hero__social {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--vp-c-text-2);
+  border: 1px solid var(--rk-border);
+  background: transparent;
+  transition:
+    transform 0.3s var(--rk-ease),
+    color 0.3s var(--rk-ease),
+    border-color 0.3s var(--rk-ease),
+    background 0.3s var(--rk-ease),
+    padding 0.3s var(--rk-ease);
+}
+
+.rk-hero__social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.rk-hero__social-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  transition:
+    max-width 0.35s var(--rk-ease),
+    opacity 0.25s var(--rk-ease),
+    margin 0.35s var(--rk-ease);
+}
+
+.rk-hero__social:hover {
+  transform: translateY(-2px);
+  color: var(--rk-bg);
+  background: var(--rk-fg);
+  border-color: var(--rk-fg);
+  padding-right: 0.85rem;
+}
+
+.rk-hero__social:hover .rk-hero__social-name {
+  max-width: 80px;
+  opacity: 1;
+  margin-left: 2px;
+}
+
+.rk-hero__social:focus-visible {
+  outline: 2px solid var(--rk-accent);
+  outline-offset: 2px;
 }
 
 /* Visual / portrait — clean, no rings, no orbs */
