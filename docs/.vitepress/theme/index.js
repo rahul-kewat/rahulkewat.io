@@ -1,14 +1,19 @@
-// .vitepress/theme/index.js or .vitepress/theme/index.ts
 import DefaultTheme from 'vitepress/theme';
-import '../custom.css'; // Import the custom CSS here
+import '../custom.css';
+import './style.css';
 import ClickableBox from './components/ClickableBox.vue';
-import Layout from './Layout.vue'; // Import your custom layout
+import ModernHome from './components/ModernHome.vue';
+import SiteFooter from './components/SiteFooter.vue';
+import WebsiteBuilder from './components/builder/WebsiteBuilder.vue';
+import Layout from './Layout.vue';
 
 export default {
   ...DefaultTheme,
-  Layout, // Set your custom layout here
-  enhanceApp({ app, router, siteData }) {
-    // Register additional components if needed
+  Layout,
+  enhanceApp({ app }) {
     app.component('ClickableBox', ClickableBox);
+    app.component('ModernHome', ModernHome);
+    app.component('SiteFooter', SiteFooter);
+    app.component('WebsiteBuilder', WebsiteBuilder);
   },
 };

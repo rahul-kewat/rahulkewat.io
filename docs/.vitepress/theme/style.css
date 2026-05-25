@@ -1,0 +1,48 @@
+/* ================================================================
+   Global VitePress overrides
+   All colors come from custom.css design tokens.
+   ================================================================ */
+
+/* Hide VitePress default home hero/features only on the home route
+   (the .rk-modern-active class is toggled in Layout.vue based on route). */
+html.rk-modern-active .VPHero,
+html.rk-modern-active .VPFeatures,
+html.rk-modern-active .VPHomeHero,
+html.rk-modern-active .VPHomeFeatures {
+  display: none !important;
+}
+
+html.rk-modern-active .VPHome {
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+html.rk-modern-active .VPContent {
+  padding: 0 !important;
+}
+
+/* Smoother scroll for anchor links */
+html { scroll-behavior: smooth; }
+
+/* Custom scrollbar — single magenta accent */
+@media (pointer: fine) {
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: var(--rk-accent);
+    border-radius: 999px;
+    border: 2px solid var(--vp-c-bg, #fff);
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--rk-accent-strong); }
+}
+
+::selection {
+  background: var(--rk-accent-soft);
+  color: inherit;
+}
+
+html.rk-modern-active .VPNav {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: var(--rk-glass-bg) !important;
+}

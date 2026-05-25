@@ -1,7 +1,231 @@
-/*  */
-.clickable-box-grid{
-    display: flex;
-    flex-wrap: wrap; /* Allows the items to wrap to the next line */
-    gap: 16px; /* Space between the boxes */
-    margin-top: 20px;
+/* ================================================================
+   ⚡ RAHULKEWAT.IO — DESIGN TOKENS (single source of truth)
+   ================================================================
+   Change values in this top block to retheme the entire site.
+   Everything below references these variables — there are no
+   hardcoded colors anywhere else in the home/builder UI.
+   ================================================================ */
+
+:root {
+  /* ─── 🎨 PALETTE (the only knobs you usually need) ─── */
+
+  /* The single accent color. Change this to retheme the whole site. */
+  --rk-accent:rgb(0, 133, 56);          /* magenta */
+  --rk-accent-strong:rgb(8, 67, 42);   /* slightly brighter for hovers */
+
+  /* Black & white scale (light mode is the default) */
+  --rk-bg:      #ffffff;
+  --rk-surface: #fafafa;
+  --rk-fg:      #0a0a0a;
+  --rk-muted:   #6b6b6b;
+  --rk-border:  #e6e6e6;
+
+  /* ─── ⚙️ DERIVED TOKENS (auto-update with palette above) ─── */
+
+  --rk-accent-soft:    color-mix(in srgb, var(--rk-accent) 14%, transparent);
+  --rk-accent-glow:    color-mix(in srgb, var(--rk-accent) 35%, transparent);
+  --rk-accent-border:  color-mix(in srgb, var(--rk-accent) 45%, var(--rk-border));
+
+  --rk-glass-bg:       color-mix(in srgb, var(--rk-bg) 70%, transparent);
+  --rk-glass-border:   var(--rk-border);
+  --rk-glass-shadow:   0 8px 32px color-mix(in srgb, var(--rk-fg) 8%, transparent);
+
+  --rk-grad-primary:   linear-gradient(135deg, var(--rk-accent), var(--rk-accent-strong));
+  --rk-grad-soft:      linear-gradient(135deg,
+                         var(--rk-accent-soft),
+                         color-mix(in srgb, var(--rk-accent) 4%, transparent));
+  --rk-grad-mono:      linear-gradient(135deg, var(--rk-fg), var(--rk-muted));
+
+  /* Layout */
+  --rk-radius-md: 0.85rem;
+  --rk-radius-lg: 1.25rem;
+  --rk-radius-xl: 1.75rem;
+  --rk-ease:      cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ─── 🔁 LEGACY ALIASES (kept for back-compat, all → magenta) ─── */
+  --rk-accent-1: var(--rk-accent);
+  --rk-accent-2: var(--rk-accent);
+  --rk-accent-3: var(--rk-accent);
+  --rk-accent-4: var(--rk-accent);
+
+  /* ─── 🪟 VITEPRESS BRAND OVERRIDES (links, search, etc.) ─── */
+  --vp-c-brand-1: var(--rk-accent);
+  --vp-c-brand-2: var(--rk-accent-strong);
+  --vp-c-brand-3: var(--rk-accent);
+  --vp-c-brand-soft: var(--rk-accent-soft);
+}
+
+/* ─── 🌑 DARK MODE OVERRIDES (toggle by VitePress automatically) ─── */
+.dark {
+  --rk-bg:      #0a0a0a;
+  --rk-surface: #111111;
+  --rk-fg:      #fafafa;
+  --rk-muted:   #a3a3a3;
+  --rk-border:  #1f1f1f;
+
+  --rk-glass-bg:     color-mix(in srgb, var(--rk-bg) 65%, transparent);
+  --rk-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+
+/* ================================================================
+   🛠 RESET / SHARED UTILITIES
+   ================================================================ */
+
+.clickable-box-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* ─── Modern home shell ─── */
+.rk-modern-home {
+  position: relative;
+  width: 100%;
+  overflow-x: clip;
+  color: var(--vp-c-text-1);
+}
+
+/* Aurora / orbs behind the page */
+.rk-aurora {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.rk-aurora::before,
+.rk-aurora::after {
+  content: "";
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.35;
+  animation: rk-float 18s ease-in-out infinite;
+}
+
+.rk-aurora::before {
+  top: -10%;
+  left: -10%;
+  background: radial-gradient(circle at 30% 30%, var(--rk-accent), transparent 60%);
+}
+
+.rk-aurora::after {
+  bottom: -20%;
+  right: -10%;
+  background: radial-gradient(circle at 70% 70%, var(--rk-fg), transparent 60%);
+  animation-delay: -9s;
+  opacity: 0.12;
+}
+
+@keyframes rk-float {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50%      { transform: translate3d(4%, -3%, 0) scale(1.08); }
+}
+
+/* Grid background pattern */
+.rk-grid-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--rk-fg) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--rk-fg) 6%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  pointer-events: none;
+}
+
+/* ─── Section primitives ─── */
+.rk-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.rk-section--narrow {
+  max-width: 960px;
+}
+
+.rk-section__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-2);
+  border: 1px solid var(--rk-border);
+  border-radius: 999px;
+  background: var(--rk-glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.rk-section__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  font-weight: 800;
+  margin: 1rem 0 0.75rem;
+  letter-spacing: -0.03em;
+}
+
+.rk-grad-text {
+  background: var(--rk-grad-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.rk-section__lede {
+  max-width: 640px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+  margin-bottom: 2.5rem;
+}
+
+/* ─── Reveal-on-scroll ─── */
+.rk-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s var(--rk-ease), transform 0.9s var(--rk-ease);
+  will-change: opacity, transform;
+}
+
+.rk-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rk-reveal { opacity: 1; transform: none; transition: none; }
+  .rk-aurora::before, .rk-aurora::after { animation: none; }
+}
+
+/* ─── Glass card primitive ─── */
+.rk-card {
+  position: relative;
+  background: var(--rk-glass-bg);
+  border: 1px solid var(--rk-border);
+  border-radius: var(--rk-radius-lg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--rk-glass-shadow);
+  transition: transform 0.45s var(--rk-ease),
+              border-color 0.45s var(--rk-ease),
+              box-shadow 0.45s var(--rk-ease);
+}
+
+.rk-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--rk-accent-border);
+  box-shadow: 0 18px 48px color-mix(in srgb, var(--rk-fg) 12%, transparent);
 }

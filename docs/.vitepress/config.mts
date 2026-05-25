@@ -23,8 +23,20 @@ function generateSidebarItems(base: string, items: Array<any>): Array<any> {
 export default defineConfig({
   title: "Rahul Kewat",
   description: "Learn How I made $100k in just a few years",
+  cleanUrls: true,
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://rahulkewat.io',
+  },
   head: [
-    ['link', { rel: 'icon', href: './favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'theme-color', content: '#ff0080' }],
+    ['meta', { property: 'og:site_name', content: 'Rahul Kewat' }],
+    ['meta', { property: 'og:image', content: 'https://rahulkewat.io/rahul_kewat.png' }],
+    ['meta', { name: 'twitter:image', content: 'https://rahulkewat.io/rahul_kewat.png' }],
+    ['meta', { name: 'twitter:site', content: '@irahulkewat' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     // Add Google AdSense script in the head section
     [
       'script',
@@ -72,6 +84,13 @@ export default defineConfig({
     logo: '/rahulkewat_logo.png',
     nav: [
       { text: 'Home', link: '/' },
+      {
+        text: 'Free Tools',
+        items: [
+          { text: 'All free tools', link: '/free-tools/' },
+          { text: 'Website Builder', link: '/free-tools/website-builder' },
+        ],
+      },
       { text: 'Best Tools', link: '/best-tools/' },
       { text: 'Freelancing', link: '/freelancing/' }
     ],
@@ -287,6 +306,15 @@ export default defineConfig({
             { text: 'Workshops', link: '/services/workshops' }
           ])
         }
+      ],
+      '/free-tools/': [
+        {
+          text: 'Free tools',
+          items: [
+            { text: 'All free tools', link: '/free-tools/' },
+            { text: 'Website Builder', link: '/free-tools/website-builder' },
+          ],
+        },
       ]
     },
     socialLinks: [
