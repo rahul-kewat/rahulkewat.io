@@ -1,3 +1,12 @@
+---
+title: Best Tools for Freelancers by Rahul Kewat
+description: Curated freelancing tools by Rahul Kewat (rahulkewat) — project management, time tracking, invoicing, design, CRM, and more to run a solo business.
+head:
+  - - meta
+    - name: keywords
+      content: best freelancer tools, Rahul Kewat tools, rahulkewat, freelance software, Upwork tools
+---
+
 # Best Tools for Freelancers
 
 ## Introduction

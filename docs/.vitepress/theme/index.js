@@ -5,6 +5,8 @@ import ClickableBox from './components/ClickableBox.vue';
 import ModernHome from './components/ModernHome.vue';
 import SiteFooter from './components/SiteFooter.vue';
 import WebsiteBuilder from './components/builder/WebsiteBuilder.vue';
+import TravelHub from './components/travel/TravelHub.vue';
+import CityGuide from './components/travel/CityGuide.vue';
 import Layout from './Layout.vue';
 
 export default {
@@ -15,5 +17,7 @@ export default {
     app.component('ModernHome', ModernHome);
     app.component('SiteFooter', SiteFooter);
     app.component('WebsiteBuilder', WebsiteBuilder);
+    app.component('TravelHub', TravelHub);
+    app.component('CityGuide', CityGuide);
   },
 };

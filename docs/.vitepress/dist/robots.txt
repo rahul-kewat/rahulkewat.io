@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Primary sitemap for Google Search Console
+Sitemap: https://rahulkewat.io/sitemap.xml
+
+# Crawl hints
+Host: https://rahulkewat.io

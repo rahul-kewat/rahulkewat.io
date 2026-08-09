@@ -5,6 +5,7 @@
     <HeroSection />
     <StatsSection />
     <BentoGrid />
+    <TravelSection />
     <ProjectShowcase />
     <TestimonialsMarquee />
     <TechStack />
@@ -16,6 +17,7 @@
 import HeroSection from './HeroSection.vue';
 import StatsSection from './StatsSection.vue';
 import BentoGrid from './BentoGrid.vue';
+import TravelSection from './TravelSection.vue';
 import ProjectShowcase from './ProjectShowcase.vue';
 import TestimonialsMarquee from './TestimonialsMarquee.vue';
 import TechStack from './TechStack.vue';

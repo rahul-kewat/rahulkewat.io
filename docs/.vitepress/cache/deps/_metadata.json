@@ -1,44 +1,50 @@
 {
-  "hash": "65699872",
+  "hash": "b4ddfd9a",
   "configHash": "2b387186",
-  "lockfileHash": "881d4f32",
-  "browserHash": "a1525e81",
+  "lockfileHash": "e07831ff",
+  "browserHash": "5882d63f",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "7c0d6df0",
+      "fileHash": "5569b525",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "7ef4ff75",
+      "fileHash": "3f46f09a",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "c2787c18",
+      "fileHash": "6ff17615",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "e4182790",
+      "fileHash": "c030e01c",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "7688378e",
+      "fileHash": "917557f0",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "107febdc",
+      "fileHash": "1ccd3f2b",
       "needsInterop": false
+    },
+    "leaflet": {
+      "src": "../../../../node_modules/leaflet/dist/leaflet-src.js",
+      "file": "leaflet.js",
+      "fileHash": "ee22ec91",
+      "needsInterop": true
     }
   },
   "chunks": {
@@ -47,6 +53,9 @@
     },
     "chunk-O6EOGSKJ": {
       "file": "chunk-O6EOGSKJ.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
     }
   }
 }

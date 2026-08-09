@@ -1,4 +1,13 @@
 import { defineConfig } from 'vitepress';
+import {
+  SITE_URL,
+  SITE_NAME,
+  DEFAULT_IMAGE,
+  DEFAULT_DESCRIPTION,
+  toCanonical,
+  ensureDescription,
+  buildPageJsonLd,
+} from './seo';
 
 // Helper function to generate sidebar items
 // Enhanced helper function to generate sidebar items
@@ -14,30 +23,104 @@ function generateSidebarItems(base: string, items: Array<any>): Array<any> {
     // For leaf items, ensure the correct path construction
     return {
       ...item,
-      link: item.link ? `${base}${item.link}`.replace(/\/{2,}/g, '/') : undefined // Fix link paths, ensure no double slashes
+      link: item.link ? `${base}${item.link}`.replace(/\/{2,}/g, '/') : undefined // Fix links, ensure no double slashes
     };
   });
 }
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Rahul Kewat",
-  description: "Learn How I made $100k in just a few years",
+  title: SITE_NAME,
+  titleTemplate: ':title | Rahul Kewat',
+  description: DEFAULT_DESCRIPTION,
+  lang: 'en-IN',
   cleanUrls: true,
   lastUpdated: true,
+  ignoreDeadLinks: true,
   sitemap: {
-    hostname: 'https://rahulkewat.io',
+    hostname: SITE_URL,
+  },
+  // Auto-fill missing descriptions so every page is indexable with unique meta
+  transformPageData(pageData) {
+    const description = ensureDescription(pageData);
+    pageData.description = description;
+    pageData.frontmatter = pageData.frontmatter || {};
+    if (!pageData.frontmatter.description) {
+      pageData.frontmatter.description = description;
+    }
+    // Prefer brand-aware titles on thin pages
+    if (!pageData.frontmatter.title && pageData.title) {
+      pageData.frontmatter.title = pageData.title;
+    }
+  },
+  // Canonical + Open Graph + Twitter + robots on every built HTML page
+  transformHead({ pageData }) {
+    const canonical = toCanonical(pageData.relativePath);
+    const title =
+      pageData.frontmatter?.title ||
+      pageData.title ||
+      SITE_NAME;
+    const description = ensureDescription(pageData);
+    const image =
+      pageData.frontmatter?.image ||
+      pageData.frontmatter?.ogImage ||
+      DEFAULT_IMAGE;
+    const isHome = pageData.relativePath === 'index.md';
+
+    return [
+      ['link', { rel: 'canonical', href: canonical }],
+      ['meta', { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }],
+      ['meta', { name: 'googlebot', content: 'index,follow' }],
+      ['meta', { name: 'author', content: 'Rahul Kewat' }],
+      ['meta', { name: 'creator', content: 'Rahul Kewat' }],
+      ['meta', { name: 'publisher', content: 'Rahul Kewat' }],
+      [
+        'meta',
+        {
+          name: 'keywords',
+          content:
+            'Rahul Kewat, rahulkewat, therahulkewat, freelance mentor, freelancing, consultant, Upwork, personal brand, travel guides',
+        },
+      ],
+      ['meta', { property: 'og:type', content: isHome ? 'profile' : 'website' }],
+      ['meta', { property: 'og:locale', content: 'en_IN' }],
+      ['meta', { property: 'og:url', content: canonical }],
+      ['meta', { property: 'og:title', content: isHome ? `${title}` : `${title} | Rahul Kewat` }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:image', content: image }],
+      ['meta', { property: 'og:image:alt', content: 'Rahul Kewat' }],
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:title', content: isHome ? `${title}` : `${title} | Rahul Kewat` }],
+      ['meta', { name: 'twitter:description', content: description }],
+      ['meta', { name: 'twitter:image', content: image }],
+      ['meta', { name: 'twitter:creator', content: '@irahulkewat' }],
+      ...(isHome
+        ? [
+            ['meta', { property: 'profile:first_name', content: 'Rahul' }],
+            ['meta', { property: 'profile:last_name', content: 'Kewat' }],
+            ['meta', { property: 'profile:username', content: 'rahulkewat' }],
+          ]
+        : []),
+      ['script', { type: 'application/ld+json' }, buildPageJsonLd(pageData)],
+    ];
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'theme-color', content: '#ff0080' }],
+    ['link', { rel: 'apple-touch-icon', href: '/rahulkewat_logo.png' }],
+    ['meta', { name: 'theme-color', content: '#008538' }],
+    ['meta', { name: 'application-name', content: 'Rahul Kewat' }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'Rahul Kewat' }],
     ['meta', { property: 'og:site_name', content: 'Rahul Kewat' }],
-    ['meta', { property: 'og:image', content: 'https://rahulkewat.io/rahul_kewat.png' }],
-    ['meta', { name: 'twitter:image', content: 'https://rahulkewat.io/rahul_kewat.png' }],
+    ['meta', { property: 'og:image', content: DEFAULT_IMAGE }],
+    ['meta', { name: 'twitter:image', content: DEFAULT_IMAGE }],
     ['meta', { name: 'twitter:site', content: '@irahulkewat' }],
+    ['link', { rel: 'me', href: 'https://www.linkedin.com/in/rahulkewat/' }],
+    ['link', { rel: 'me', href: 'https://github.com/rahul-kewat' }],
+    ['link', { rel: 'me', href: 'https://www.youtube.com/@iamrahulkewat' }],
+    ['link', { rel: 'me', href: 'https://www.instagram.com/rahulkewat_/' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-    // Add Google AdSense script in the head section
+    // Google AdSense
     [
       'script',
       {
@@ -46,12 +129,12 @@ export default defineConfig({
         crossorigin: 'anonymous',
       },
     ],
-    // Add Google Analytics script in the head section
+    // Google Analytics
     [
       'script',
       {
         async: true,
-        src: `https://www.googletagmanager.com/gtag/js?id=G-LGGSEDKHHR`, // Replace with your Measurement ID
+        src: `https://www.googletagmanager.com/gtag/js?id=G-LGGSEDKHHR`,
       },
     ],
     [
@@ -61,12 +144,12 @@ export default defineConfig({
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-LGGSEDKHHR', { 
+      gtag('config', 'G-LGGSEDKHHR', {
         page_path: window.location.pathname,
       });
       `,
     ],
-    // Add the Microsoft Clarity script here
+    // Microsoft Clarity
     [
       'script',
       {},
@@ -84,6 +167,7 @@ export default defineConfig({
     logo: '/rahulkewat_logo.png',
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'About', link: '/about' },
       {
         text: 'Free Tools',
         items: [
@@ -91,6 +175,7 @@ export default defineConfig({
           { text: 'Website Builder', link: '/free-tools/website-builder' },
         ],
       },
+      { text: 'Travel', link: '/travel/' },
       { text: 'Best Tools', link: '/best-tools/' },
       { text: 'Freelancing', link: '/freelancing/' }
     ],

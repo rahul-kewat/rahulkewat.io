@@ -13,6 +13,7 @@
     </template>
 
     <template #layout-bottom>
+      <SeoJsonLd />
       <SiteFooter />
     </template>
   </DefaultTheme.Layout>
@@ -25,6 +26,7 @@ import DefaultTheme from 'vitepress/theme';
 import GoogleAd from './components/GoogleAd.vue';
 import ModernHome from './components/ModernHome.vue';
 import SiteFooter from './components/SiteFooter.vue';
+import SeoJsonLd from './components/SeoJsonLd.vue';
 
 const route = useRoute();
 
