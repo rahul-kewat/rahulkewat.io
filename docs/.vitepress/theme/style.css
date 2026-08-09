@@ -41,8 +41,33 @@ html { scroll-behavior: smooth; }
   color: inherit;
 }
 
-html.rk-modern-active .VPNav {
+/* Glass blur must live on .VPNavBar — NOT .VPNav.
+   backdrop-filter creates a containing block for position:fixed
+   descendants, which collapses VitePress's mobile .VPNavScreen
+   (fixed + top/bottom) to height:0 inside the 64px header. */
+html.rk-modern-active .VPNavBar {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   background: var(--rk-glass-bg) !important;
+}
+
+/* Keep the screen menu above page content when open */
+.VPNavScreen {
+  z-index: 100;
+}
+
+/* Travel pages: drop default doc chrome padding noise */
+.VPDoc:has(.rk-city),
+.VPDoc:has(.rk-hub) {
+  padding: 0 !important;
+}
+
+.VPDoc:has(.rk-city) .content-container,
+.VPDoc:has(.rk-hub) .content-container {
+  max-width: none !important;
+}
+
+.VPDoc:has(.rk-city) .vp-doc,
+.VPDoc:has(.rk-hub) .vp-doc {
+  padding: 0 !important;
 }

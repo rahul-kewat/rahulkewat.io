@@ -1,3 +1,12 @@
+---
+title: Freelancing Playbook by Rahul Kewat — From First Gig to Six Figures
+description: Complete freelancing guide by Rahul Kewat (rahulkewat). Mindset, clients, pricing, proposals, retention, and scaling — distilled from real six-figure freelance work.
+head:
+  - - meta
+    - name: keywords
+      content: freelancing guide, Rahul Kewat freelancing, rahulkewat, how to freelance, freelance mentor, Upwork tips
+---
+
 # Welcome to the World of Freelancing
 
 ## Unlock Your Potential: Start Your Freelancing Journey Today

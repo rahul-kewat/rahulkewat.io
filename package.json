@@ -5,6 +5,10 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.22",
     "vitepress": "^1.3.4"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }

@@ -1,10 +1,10 @@
-I---
+---
 title: Free Tools for Freelancers — No Login, No Hosting
-description: A growing collection of free, browser-based tools for freelancers. No login, no signup, no hosting required. Built by a freelancer, for freelancers.
+description: A growing collection of free, browser-based tools for freelancers by Rahul Kewat (rahulkewat). No login, no signup, no hosting required.
 head:
   - - meta
     - name: keywords
-      content: free freelancer tools, free portfolio builder, no-code freelancer tools, free website builder, freelancer resources
+      content: free freelancer tools, free portfolio builder, no-code freelancer tools, free website builder, Rahul Kewat tools, rahulkewat
   - - meta
     - property: og:type
       content: website

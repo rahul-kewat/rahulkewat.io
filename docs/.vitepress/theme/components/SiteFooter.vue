@@ -7,8 +7,9 @@
           <span>Rahul Kewat</span>
         </div>
         <p>
-          Helping freelancers, founders, and creators build a craft-led
-          business they're proud of.
+          Official site of <strong>Rahul Kewat</strong> (rahulkewat / therahulkewat) —
+          helping freelancers, founders, and creators build a craft-led business
+          they're proud of.
         </p>
         <div class="rk-footer__socials">
           <a
@@ -81,7 +82,9 @@ const cols = [
     title: 'Explore',
     links: [
       { label: 'Home', href: '/' },
+      { label: 'About', href: '/about' },
       { label: 'Free tools', href: '/free-tools/' },
+      { label: 'Travel', href: '/travel/' },
       { label: 'Freelancing playbook', href: '/freelancing/' },
       { label: 'Best tools', href: '/best-tools/' },
     ],
