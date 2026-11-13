@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Rahul Kewat (rahulkewat) — Freelance Mentor, Consultant & Builder
-titleTemplate: Official Site of Rahul Kewat
+title: Rahul Kewat | Freelance Mentor, Consultant & Builder for Six-Figure Businesses
+titleTemplate: false
 description: Official website of Rahul Kewat — also known as rahulkewat and therahulkewat. Freelance mentor, consultant, and creator. Freelancing playbooks, free tools, travel guides, and 1:1 mentorship from a six-figure freelancer.
 head:
   - - meta
