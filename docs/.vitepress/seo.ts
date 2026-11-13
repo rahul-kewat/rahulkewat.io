@@ -3,7 +3,7 @@
  * Canonical host must stay in sync with sitemap.hostname.
  */
 
-export const SITE_URL = 'https://rahulkewat.io';
+export const SITE_URL = 'https://rahulkewat.com';
 export const SITE_NAME = 'Rahul Kewat';
 export const DEFAULT_IMAGE = `${SITE_URL}/rahul_kewat.png`;
 export const DEFAULT_DESCRIPTION =
@@ -163,6 +163,37 @@ export function buildBreadcrumbs(relativePath, title) {
 }
 
 /** Full JSON-LD graph string for a VitePress pageData object */
+export function serviceMentorshipJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Freelance Mentorship",
+    "name": "1:1 Freelance Mentorship with Rahul Kewat",
+    "description": "Personalized 1:1 mentorship to help ambitious freelancers, founders, and creators turn their craft into a six-figure business.",
+    "provider": {
+      "@type": "Person",
+      "name": "Rahul Kewat",
+      "url": SITE_URL
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Global"
+    },
+    "url": `${SITE_URL}/#mentorship`,
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "priceType": "hourly",
+        "unitText": "hour"
+      },
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  };
+}
+
 export function buildPageJsonLd(pageData) {
   const relativePath = pageData?.relativePath || '';
   const url = toCanonical(relativePath);
@@ -181,6 +212,10 @@ export function buildPageJsonLd(pageData) {
       type: isHome ? 'ProfilePage' : 'WebPage',
     }),
   ];
+
+  if (isHome) {
+    nodes.push(serviceMentorshipJsonLd());
+  }
 
   if (!isHome) {
     nodes.push(breadcrumbJsonLd(buildBreadcrumbs(relativePath, pageTitle)));
